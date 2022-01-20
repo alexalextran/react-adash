@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import Whyus from './components/Whyus';
 import YTvideos from './components/YTvideos';
+import Statistics from "./components/Statistics"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Aboutus />
       <YTvideos />
       <Whyus />
+      <Statistics />
     </div>
   );
 }
