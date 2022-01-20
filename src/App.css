@@ -9,7 +9,7 @@
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.9px;
   scroll-behavior: smooth;
-  color: white;
+
   line-height: 1.6;
   word-spacing: 1.2px;
 }
@@ -22,6 +22,10 @@
 .flex-column{
   display: flex;
   flex-direction: column;
+}
+
+.red{
+  color: rgb(235,10,8);
 }
 
 /* 
@@ -49,6 +53,7 @@ NAVIGATION
 
 .link{
   padding-right: 14px;
+  color: white;
 }
 
 nav{
@@ -106,12 +111,13 @@ HOME
   margin-top: 36px;
   text-align: start;
   font-size: 20px;
+  color: white;
 }
 
 
 .home__text--wrapper{
   margin-top: 130px;
-  width: 40%;
+  width: 50%;
   
 }
 
@@ -172,4 +178,58 @@ HOME
  .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
  }
+ 
+
+ /*
+
+ AboutUs
+
+ */
+
+
+ #Aboutus{
+   height: fit-content;
+   background-color: #5f0e0e;
+   text-align: center;
+   
+ }
+
+ .aboutus__text{
+   color: white;
+   padding-top: 80px;
+   font-size: 40px;
+ }
+
+ .cardicon{
+   font-size: 80px;
+   background-color: rgb(168,91,109);
+   border-radius: 50% ;
+   width: 150px;
+   height: 150px;
+   color: white;
+
+ }
+
+ .aboutus__card--wrapper{
+   width: 25%;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   margin-top: 60px;
+   padding: 40px 8px;
+   height: 500px;
+   color: white;
+   border: none;
+   transition: all 600ms;
+    
+ }
+
+ .aboutus__card--wrapper:hover{
+   background-color: #3d0000;
+ }
+
+ .aboutus__cards{
+   justify-content: space-around;
+ }
+
  
