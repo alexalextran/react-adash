@@ -28,6 +28,12 @@
   color: rgb(235,10,8);
 }
 
+.gold{
+  color:rgb(255, 226, 9);
+  font-weight: bold;
+}
+
+
 /* 
 
 NAVIGATION
@@ -96,7 +102,7 @@ HOME
 .home__header{
   font-size: 82px;
   font-weight: 600;
-  color: rgb(235,10,8);
+  color: rgb(255, 226, 9);
   text-align: start;
 }
 .home__subheader{
@@ -221,6 +227,7 @@ HOME
    color: white;
    border: none;
    transition: all 600ms;
+   margin-bottom: 40px;
     
  }
 
@@ -232,4 +239,61 @@ HOME
    justify-content: space-around;
  }
 
+
+ .card__summary{
+   margin-top: 20px;
+ }
+
+ /*
+
+ Videos
+
+ */
+
+ #YTvideos{
+  height: 40vw;
+ }
+
+ #Whyus{
+   background-color: rgb(95,14,14);
+   height: 80vh;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 40px 90px;
+ }
+
+ .Whyus__left{
+   width: 700px;
+   height: 100%;
+ }
+
+ .Whyus__Right{
+  height: 100%;
+  width: 700px; 
+}
+
+ .whyus__header{
+  display: flex; 
+  font-size: 30px;
+ }
+
+ .whyus__title{
+   margin-top: 30px;
+   border-left: 5px solid rgb(255, 226, 9);
+   margin-bottom: 20px;
+   padding-left: 20px;
+   
+  
+   
+  
+ }
+
+ .whyussvg{
+   height: 100%;
+   width: 400px;
+ 
+ }
  
