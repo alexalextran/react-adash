@@ -5,6 +5,8 @@ import Nav from './components/Nav';
 import Whyus from './components/Whyus';
 import YTvideos from './components/YTvideos';
 import Statistics from "./components/Statistics"
+import Testimonials from './components/Testimonials';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <YTvideos />
       <Whyus />
       <Statistics />
+      <Testimonials />
+      <ContactUs />
     </div>
   );
 }

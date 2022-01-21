@@ -7,7 +7,8 @@ const Aboutuscards = (card) => {
         <div className='cardicon'><FontAwesomeIcon icon={card.icon} /></div>
             
             <h1>{card.title}</h1>
-            <p className='card__summary'>{card.summary}</p>
+            <p className='card__summary'>{card.summary}</p> 
+            <a className='card__learnmore'>Learn More</a>
         </div>
     );
 }
