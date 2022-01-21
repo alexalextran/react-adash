@@ -69,6 +69,7 @@ nav{
   background-color: rgb(24, 24, 24);
   padding: 40px 10%;
   color: white;
+  
 }
 
 
@@ -336,6 +337,7 @@ HOME
    flex-direction: column;
    justify-content: center;
    background-color: rgb(61,0,0);
+   align-items: center;
   
  }
 
@@ -405,6 +407,7 @@ HOME
  #contact{
    height: 70vh;
    background-color: rgb(95,14,14);
+   position: relative;
  }
 
  .contact__header--image{
@@ -417,5 +420,78 @@ HOME
    background-size: 2000px 900px;
    background-repeat: repeat-x;
    background-position: 30px;
+   
 
  }
+
+ .card__wrapper{
+   display: flex;
+   width: 1300px;
+   margin: auto;
+  
+   
+ }
+ .send__us{
+  background-color: rgb(95,14,14);
+  position: absolute;
+  top: 200px;
+  width: 400px;
+  height: 400px;
+  padding: 40px 70px;
+  color: White;
+  text-align: center;
+  right: 51%;
+  transition: all 500ms;
+  border-radius: 5%;
+ }
+
+ .send__us:hover{
+   color: rgb(95,14,14);
+   background-color: white;
+   transform: scale(1.04);
+  
+ }
+
+ .support__us{
+  background-color: rgb(95,14,14);
+  position: absolute;
+  top: 200px;
+  left: 51%;
+  width: 400px;
+  height: 400px;
+  padding: 40px 70px;
+  color: White;
+  text-align: center;
+  border-radius: 5%;
+  transition: all 500ms;
+ }
+
+ .support__us:hover{
+  color: rgb(95,14,14);
+  background-color: white;
+  transform: scale(1.04);
+ 
+}
+ 
+.card__title{
+  font-size: 24px;
+  border-bottom: 2px solid rgb(255,226,9);
+}
+
+.card__para{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+
+/*
+
+FOOTER
+
+*/
+
+footer{
+  height: 30vh;
+  background-color: rgb(24, 24, 24);
+}
