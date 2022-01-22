@@ -41,8 +41,15 @@ const Home = () => {
     <FontAwesomeIcon icon="atom" className="homeicon  homeicon5"/>
     <FontAwesomeIcon icon="superscript" className="homeicon homeicon6"/>
     <FontAwesomeIcon icon="flask" className="homeicon  homeicon7"/>
-    <FontAwesomeIcon icon="microscope" className="homeicon  homeicon8"/>
     <FontAwesomeIcon icon="graduation-cap" className="homeicon  homeicon9"/>
+    <FontAwesomeIcon icon="atom" className="homeicon homeicon13"/>
+    <FontAwesomeIcon icon="superscript" className="homeicon  homeicon14"/>
+    <FontAwesomeIcon icon="microscope" className="homeicon  homeicon11"/>
+    <FontAwesomeIcon icon="graduation-cap" className="homeicon  homeicon12"/>
+    <FontAwesomeIcon icon="microscope" className="homeicon  homeicon8"/>
+    <FontAwesomeIcon icon="flask" className="homeicon  homeicon10"/>    
+    <FontAwesomeIcon icon="microscope" className="homeicon  homeicon15"/>
+    
     
      
     <img src={Homesvg} className="homesvg" />

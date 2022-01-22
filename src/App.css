@@ -89,42 +89,86 @@ HOME
 .homeicon1{
   top: 15vh;
   left: 5vw;
+  color: orange;
 }
 .homeicon2{
   top: 15vh;
   left: 70vw;
+  color: purple;
 }
 .homeicon3{
   top: 15vh;
   left: 90vw;
+  color: white;
+ 
 }
 .homeicon4{
   top: 50vh;
   left: 5vw;
+  color: black;
 }
 .homeicon5{
   top: 15vh;
   left: 30vw;
+  color: rgb(130,216,249);
+ 
 }
 .homeicon6{
   top: 50vh;
     left: 90vw;
+    color: orange;
 }
 .homeicon7{
   top: 80vh;
   left: 5vw;
+  color: purple;
 }
 .homeicon8{
   
     top: 50vh;
     left: 70vw;
-  
+    color: white;
 }
 
 .homeicon9{
   top: 80vh;
   left: 90vw;
+  color: black;
 }
+
+.homeicon10{
+  top: 15vh;
+  left: 15vw;
+  color: purple;
+}
+.homeicon11{
+  top: 50vh;
+  left: 15vw;
+  color: white;
+}
+.homeicon12{
+  top: 80vh;
+  left: 15vw;
+  color: black;
+}
+
+
+.homeicon13{
+  top: 15vh;
+  left: 80vw;
+  color: rgb(130,216,249);
+}
+.homeicon14{
+  top: 50vh;
+  left: 80vw;
+  color: orange;
+}
+.homeicon15{
+  top: 80vh;
+  left: 80vw;
+  color: white;
+}
+
 
 
 #Home{
