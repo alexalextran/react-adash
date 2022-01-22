@@ -1,10 +1,51 @@
-import React from "react";
+import React, {useEffect, useState}from "react";
 import Homesvg from "../assets/home.svg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
+  const [ x, setx] = useState()
+  const [ y, sety] = useState()
+ 
+  
+
+  function moveBackground(event) {
+    const scaleFactor = 1 / 20;
+    const shapes = document.querySelectorAll(".homeicon");
+    setx((event)*scaleFactor)
+    sety((event)*scaleFactor)
+
+    for (let i = 0; i < shapes.length; ++i) {
+      const isOdd = i % 2 !== 0;
+      const boolInt = isOdd ? -1 : 1;
+      // Added rotate after tutorial
+      shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
+    }
+    
+    }
+  
+
+  useEffect(() => {
+
+    moveBackground()
+    
+  }, []);
+
+
   return (
-    <section id="Home">
-      <img src={Homesvg} className="homesvg" />
+    <section id="Home" onMouseMove={(event) => moveBackground(event.clientX, event.clientY)}>  
+   
+    <FontAwesomeIcon icon="superscript" className="homeicon homeicon1"/>
+    <FontAwesomeIcon icon="flask" className="homeicon  homeicon2"/>
+    <FontAwesomeIcon icon="microscope" className="homeicon  homeicon3"/>
+    <FontAwesomeIcon icon="graduation-cap" className="homeicon  homeicon4"/>
+    <FontAwesomeIcon icon="atom" className="homeicon  homeicon5"/>
+    <FontAwesomeIcon icon="superscript" className="homeicon homeicon6"/>
+    <FontAwesomeIcon icon="flask" className="homeicon  homeicon7"/>
+    <FontAwesomeIcon icon="microscope" className="homeicon  homeicon8"/>
+    <FontAwesomeIcon icon="graduation-cap" className="homeicon  homeicon9"/>
+    
+     
+    <img src={Homesvg} className="homesvg" />
       <div className="home__text--wrapper">
         <h1 className="home__header">A- Academy</h1>
 

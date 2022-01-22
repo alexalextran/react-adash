@@ -80,6 +80,53 @@ HOME
 
 */
 
+.homeicon{
+  color: rgb(200, 200, 200);
+  font-size: 30px;
+  position: absolute;
+  z-index: 100;
+}
+.homeicon1{
+  top: 15vh;
+  left: 5vw;
+}
+.homeicon2{
+  top: 15vh;
+  left: 70vw;
+}
+.homeicon3{
+  top: 15vh;
+  left: 90vw;
+}
+.homeicon4{
+  top: 50vh;
+  left: 5vw;
+}
+.homeicon5{
+  top: 15vh;
+  left: 30vw;
+}
+.homeicon6{
+  top: 50vh;
+    left: 90vw;
+}
+.homeicon7{
+  top: 80vh;
+  left: 5vw;
+}
+.homeicon8{
+  
+    top: 50vh;
+    left: 70vw;
+  
+}
+
+.homeicon9{
+  top: 80vh;
+  left: 90vw;
+}
+
+
 #Home{
   position: relative;
   display: flex;
@@ -494,4 +541,14 @@ FOOTER
 footer{
   height: 30vh;
   background-color: rgb(24, 24, 24);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__text{
+  margin-bottom: 20px;
 }
