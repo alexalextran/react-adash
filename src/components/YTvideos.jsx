@@ -10,26 +10,16 @@ const Ytvideos = () => {
       buttons.forEach((button, i) => {
         button.addEventListener("click", () => {
           // un-select all the items
-          var iframe = document.getElementsByTagName("iframe")
-          console.log(i)
-       
+          var iframe = document.getElementsByTagName("iframe");
 
-          for (let k = 0; k < buttons.length; k++){
-            if(k == i){
+          for (let k = 0; k < buttons.length; k++) {
+            if (k == i) {
+            } else {
+              var url = iframe[k].getAttribute("src");
+              iframe[k].setAttribute("src", url);
             }
-            else{
-              console.log(k)
-               var url = iframe[k].getAttribute("src");
-               iframe[k].setAttribute("src", url);
-            }
-
           }
-          
-         
-         
-          
-         
-        
+
           items.forEach((item) =>
             item.classList.remove("carousel__item--selected")
           );
@@ -57,8 +47,14 @@ const Ytvideos = () => {
 
   return (
     <section id="YTvideos">
+
+   
       <div className="carousel">
         <div className="carousel__item--wrapper">
+        <div className="YTvideos__header--text">
+   <h1 className="YTvideos__header--title gold">Recommended Videos</h1>
+   <p>Watch some of our top videos on maths, phyiscs and chemistry</p>
+</div>
           <div className="carousel__item">
             <iframe
               width="1050"
