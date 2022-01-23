@@ -10,11 +10,26 @@ const Ytvideos = () => {
       buttons.forEach((button, i) => {
         button.addEventListener("click", () => {
           // un-select all the items
-          var iframe = document.getElementsByTagName("iframe")[0];
-          var url = iframe.getAttribute("src");
-          iframe.setAttribute("src", "");
-          iframe.setAttribute("src", url);
+          var iframe = document.getElementsByTagName("iframe")
+          console.log(i)
+       
 
+          for (let k = 0; k < buttons.length; k++){
+            if(k == i){
+            }
+            else{
+              console.log(k)
+               var url = iframe[k].getAttribute("src");
+               iframe[k].setAttribute("src", url);
+            }
+
+          }
+          
+         
+         
+          
+         
+        
           items.forEach((item) =>
             item.classList.remove("carousel__item--selected")
           );
@@ -44,11 +59,21 @@ const Ytvideos = () => {
     <section id="YTvideos">
       <div className="carousel">
         <div className="carousel__item--wrapper">
-          <div className="carousel__item"></div>
           <div className="carousel__item">
             <iframe
-              width="950"
-              height="420"
+              width="1050"
+              height="620"
+              src="https://www.youtube.com/embed/roZrLIHFHw0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="carousel__item">
+            <iframe
+              width="1050"
+              height="620"
               src="https://www.youtube.com/embed/rQPw4AnT5pQ"
               title="YouTube video player"
               frameBorder="0"
@@ -56,7 +81,17 @@ const Ytvideos = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="carousel__item">3</div>
+          <div className="carousel__item">
+            <iframe
+              width="1050"
+              height="620"
+              src="https://www.youtube.com/embed/CTvOAQpfWBY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
 
         <div className="carousel__nav">

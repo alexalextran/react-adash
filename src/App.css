@@ -399,7 +399,7 @@ HOME
  */
 
  #YTvideos{
-  height: 40vw;
+  height: 50vw;
  }
 
  .carousel{
@@ -417,15 +417,21 @@ HOME
  }
 
  .carousel__item{
-  
-   
+  opacity: 0;
    padding: 1em;
    display: none;
+   transition: all 1s;
 
  }
+ iframe{
+  transform: translateY(10px);
+ }
 
- .carousel__item--selected{
+ .carousel__item.carousel__item--selected {
+   transform: translateY(10px);
    display: block;
+   opacity: 1;
+   transition: all 1s;
  }
 
  .carousel__nav{
