@@ -1,4 +1,4 @@
-import React, {useEffect, useState}from "react";
+import React, { useState}from "react";
 import Homesvg from "../assets/home.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -8,27 +8,23 @@ const Home = () => {
  
   
 
-  function moveBackground(event) {
+  function moveBackground(eventx, eventy) {
     const scaleFactor = 1 / 20;
     const shapes = document.querySelectorAll(".homeicon");
-    setx((event)*scaleFactor)
-    sety((event)*scaleFactor)
+    setx((eventx)*scaleFactor)
+    sety((eventy)*scaleFactor)
 
     for (let i = 0; i < shapes.length; ++i) {
       const isOdd = i % 2 !== 0;
       const boolInt = isOdd ? -1 : 1;
       // Added rotate after tutorial
-      shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg)`
+      shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px) rotate(${x * boolInt * 10}deg) rotate(${y * boolInt * 10}deg)`
     }
     
     }
   
 
-  useEffect(() => {
-
-    moveBackground()
-    
-  }, []);
+ 
 
 
   return (
@@ -52,7 +48,7 @@ const Home = () => {
     
     
      
-    <img src={Homesvg} className="homesvg" />
+    <img src={Homesvg} className="homesvg" alt="homepageillustration" />
       <div className="home__text--wrapper">
         <h1 className="home__header">A- Academy</h1>
 
