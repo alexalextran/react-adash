@@ -8,6 +8,7 @@ import Statistics from "./components/Statistics"
 import Testimonials from './components/Testimonials';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 function App() {

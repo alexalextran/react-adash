@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
+
 const Contactus = () => {
     const[ismodalopen, setismodalopen] = useState(true)
     function togglemodal(){
@@ -51,7 +53,8 @@ const Contactus = () => {
             </div>
             
         <div className='card__wrapper'>
-       
+       <a target="_blank" href='https://paypal.me/AadarshAnuj
+            '>
              <div className='support__us clickable'>
                 <img/>
                 <h5 className='card__title'>
@@ -64,6 +67,8 @@ const Contactus = () => {
                     Any amount is appreciated!
                 </p>
             </div>
+            </a>
+           
         
 
             <div className='send__us clickable' onClick={() => togglemodal()}>
