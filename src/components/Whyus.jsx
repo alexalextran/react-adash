@@ -1,5 +1,6 @@
 import React from "react";
 import whyussvg from "../assets/whyus.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Whyus = () => {
   return (
@@ -34,8 +35,11 @@ const Whyus = () => {
 
       <div className="Whyus__Right">
         <div className="whyus__card">
-          <img />
-          <div>
+        <div className="calendar__icon--wrapper">
+            <FontAwesomeIcon icon="calendar" className="calendar__icon"/>
+        </div>
+        
+          <div className="whyus__card--text">
             <h2>Weekly Videos!</h2>
             <p>
               We produce <span className="gold">weekly</span> content so feel free to request a video on a
@@ -44,8 +48,18 @@ const Whyus = () => {
           </div>
         </div>
         <div className="whyus__card">
-          <img />
-          <div>
+        <div className="whyus__vc">
+          <span className="whyus__vc--icon">
+            <FontAwesomeIcon icon="flask" />
+          </span>
+          <span className="whyus__vc--icon">
+            <FontAwesomeIcon icon="superscript" />
+          </span>
+          <span className="whyus__vc--icon">
+            <FontAwesomeIcon icon="atom" />
+          </span>
+        </div>
+          <div className="whyus__card--text">
             <h2>Various Content</h2>
             <p>
               We create content not just on one subject, but a <span className="gold">whole range</span>  of topics from different subjects such as chemistry, math and physics.
@@ -53,8 +67,16 @@ const Whyus = () => {
           </div>
         </div>
         <div className="whyus__card">
-          <img />
-          <div>
+        <span className="whyus__free--icon calendar__icon--wrapper">
+        <div >
+        <FontAwesomeIcon icon="ban" className="line absolute" />
+        </div>
+        <div className="calendar__icon--wrapper">
+          <FontAwesomeIcon icon="comment-dollar" className="dollar__icon"/>
+        </div>
+        
+        </span>
+          <div className="whyus__card--text">
             <h2>Most Importantly Its <span className="gold">free</span> !</h2>
             <p>
               We don't charge a single cent so that<span className="gold">anyone</span>  can watch these videos, and that's the best part!
