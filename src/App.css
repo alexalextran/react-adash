@@ -822,8 +822,8 @@ HOME
   
  }
  
- .modal--open .support__us,
- .modal--open .send__us
+ .support__us.modal--open ,
+ .send__us.modal--open 
  {
    visibility: hidden;
  }
@@ -864,7 +864,7 @@ HOME
   margin-bottom: 30px;
 }
 
-.modal--open .contact__form{
+.contact__form.modal--open {
   visibility: visible;
   opacity: 1;
   margin-bottom: 0px;

@@ -5,13 +5,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contactus = () => {
     const[ismodalopen, setismodalopen] = useState(true)
+   
+    
     function togglemodal(){
+         const send__Us = document.querySelector(".send__us")
+         const contact__form = document.querySelector(".contact__form")
+         const support__us = document.querySelector(".support__us")
+         
         if (ismodalopen) {
             setismodalopen(false);
-            return document.body.classList.remove("modal--open");
+            return send__Us.classList.remove("modal--open"), contact__form.classList.remove("modal--open"), support__us.classList.remove("modal--open")
           }
           setismodalopen(true);
-            document.body.classList += " modal--open";
+          send__Us.classList += " modal--open";
+          contact__form.classList += " modal--open"
+          support__us.classList += " modal--open"
 
 
     }
@@ -34,12 +42,12 @@ const Contactus = () => {
 
             <label>Name
             <br/>
-            <input type="text"></input>
+            <input type="text" required></input>
             </label>
             <br/>
             <label>Email
             <br/>
-            <input type="text" ></input>
+            <input type="email" required></input>
             <br/>
             </label>
             <label>Subject
