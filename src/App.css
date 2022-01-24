@@ -525,15 +525,14 @@ HOME
  .whyus__card{
    display: flex;
    flex-direction: row-reverse;
- 
    margin-bottom: 90px;
    justify-content: space-around;
-   border-bottom: 2px solid black;
+   border-bottom: 3px solid rgb(199,97,108);
  }
 
  .whyus__card--text{
-   width: 50%;
-   padding-bottom: 20px;
+   width: 60%;
+   padding-bottom: 40px;
  }
 
  .whyus__vc--icon{
@@ -568,7 +567,7 @@ HOME
   color: red;
    font-size: 60px;
    top: 17px;
-   right: 145px;
+   right: 110px;
    animation: line 2s infinite alternate-reverse;
    
  }
@@ -606,17 +605,17 @@ HOME
  }
 
  .calendar__icon--wrapper{
-   width: 50%;
+   width: 40%;
    display: flex;
    justify-content: center;
  }
 
  .calendar__icon{
-   margin-top: 30px;
+   margin-top: 15px;
   font-size: 50px;
   animation: calendar 1s ease 0s infinite alternate-reverse none;
   font-size: 100px;
-  width: 50%;
+  width: 40%;
  }
 
  @keyframes calendar {
