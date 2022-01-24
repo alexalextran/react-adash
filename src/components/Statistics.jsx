@@ -82,13 +82,13 @@ useEffect(() => {
                 <p class="statistics__text">
                 Subscribers
                 </p>
-                <p class="statistics__text" id="subcount">0</p>
+                <p id="subcount">0</p>
               </div>
               <div class="stat">
                 <p class="statistics__text">
                 Total views
                 </p>
-                <p class="statistics__text" id="viewcount">0</p>
+                <p id="viewcount">0</p>
               </div>
            
           
