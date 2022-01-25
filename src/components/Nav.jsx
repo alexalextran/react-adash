@@ -1,16 +1,14 @@
-
 import Navlinks from "./ui/NavLinks";
 import logo from "../assets/logo.jpeg";
+import { Link } from 'react-router-dom'
+
 
 const Nav = () => {
   window.onscroll = () => {
     stickynavbar();
   };
 
-  
-
   function stickynavbar() {
-    
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
 
@@ -33,11 +31,28 @@ const Nav = () => {
       </div>
 
       <div className="nav__links flex-row">
-        <a href="#Home"><Navlinks name="Home" /></a>
-        <a href="#Aboutus"> <Navlinks name="About Us" /></a>
-        <a href="#Whyus"><Navlinks name="Why us?" /></a>
-        <a href="#Testimonials"><Navlinks name="Testimonials" /></a>
-        <a href="#contact"><Navlinks name="Contact & Support" /></a>
+      
+        <a href="#Home">
+          <Navlinks name="Home" />
+        </a>
+        
+        <a href="#Aboutus">
+          {" "}
+          <Navlinks name="About Us" />
+        </a>
+        <a href="#Whyus">
+          <Navlinks name="Why us?" />
+        </a>
+        <a href="#Testimonials">
+          <Navlinks name="Testimonials" />
+        </a>
+        <a href="#contact">
+          <Navlinks name="Contact & Support" />
+        </a>
+        <Link to="/videos"><p className="link gold">Videos</p></Link>
+
+         
+      
       </div>
     </nav>
   );

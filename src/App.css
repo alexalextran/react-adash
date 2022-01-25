@@ -9,13 +9,17 @@
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.9px;
   scroll-behavior: smooth;
-
   line-height: 1.6;
   word-spacing: 1.2px;
 }
 
+html{
+  background-color: #5f0e0e;
+}
+
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover, a:visited, a:active {
@@ -23,6 +27,9 @@ a:hover, a:visited, a:active {
   text-decoration: none;
  }
 
+ li{
+   list-style: none;
+ }
 
 .flex-row{
   display: flex;
@@ -36,6 +43,8 @@ a:hover, a:visited, a:active {
 .red{
   color: rgb(235,10,8);
 }
+
+
 
 .gold{
   color:rgb(255, 226, 9);
@@ -99,9 +108,7 @@ NAVIGATION
 
 */ 
 
-.nav__logo{
-  
-}
+
 
 .sticky {
   position: fixed;
@@ -122,6 +129,10 @@ NAVIGATION
   font-weight: 500;
   position: relative;
   cursor: pointer;
+}
+
+.link.gold{
+  color: rgb(255, 226, 9);
 }
 
 .link:after{
@@ -158,6 +169,10 @@ nav{
 }
 
 .sticky + #Home {
+  margin-top: 120px;
+}
+
+.sticky + #videosection {
   margin-top: 120px;
 }
 
@@ -1029,4 +1044,28 @@ footer{
   padding-top: 30px;
   justify-content: space-around;
   width: 200px;
+}
+
+/*
+
+Videosection
+
+
+*/
+
+
+#videosection{
+  background-color: #5f0e0e;
+  height: 100vh;
+}
+
+#videosection__nav{
+  margin: 100px auto;
+  display: flex;
+  width: 900px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d0000;
+  border-radius: 30px;
 }

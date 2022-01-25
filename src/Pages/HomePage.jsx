@@ -6,12 +6,14 @@ import Testimonials from "../components/Testimonials";
 import ContactUs from "../components/ContactUs";
 import Aboutus from "../components/Aboutus";
 import Home from "../components/Home"
+import Nav from '../components/Nav';
 
 
 
 const HomePage = () => {
     return (
         <>
+          <Nav />
           <Home />
           <Aboutus />
           <YTvideos />
