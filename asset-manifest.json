@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-adash/static/css/main.a9de2e7e.css",
-    "main.js": "/react-adash/static/js/main.576b17cb.js",
+    "main.css": "/react-adash/static/css/main.1f50dc06.css",
+    "main.js": "/react-adash/static/js/main.20b90b3d.js",
     "static/js/787.b4a482b4.chunk.js": "/react-adash/static/js/787.b4a482b4.chunk.js",
     "static/media/alex.jpg": "/react-adash/static/media/alex.00583f9571f4677cb776.jpg",
     "static/media/contact.jpg": "/react-adash/static/media/contact.67e3e3a3e1c07bdafb26.jpg",
@@ -11,12 +11,12 @@
     "static/media/whyus.svg": "/react-adash/static/media/whyus.0eaa8d61f12db3751603dbc2620f562b.svg",
     "static/media/home.svg": "/react-adash/static/media/home.13e820c6b3d9ac2f767b0fb35179c5e2.svg",
     "index.html": "/react-adash/index.html",
-    "main.a9de2e7e.css.map": "/react-adash/static/css/main.a9de2e7e.css.map",
-    "main.576b17cb.js.map": "/react-adash/static/js/main.576b17cb.js.map",
+    "main.1f50dc06.css.map": "/react-adash/static/css/main.1f50dc06.css.map",
+    "main.20b90b3d.js.map": "/react-adash/static/js/main.20b90b3d.js.map",
     "787.b4a482b4.chunk.js.map": "/react-adash/static/js/787.b4a482b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9de2e7e.css",
-    "static/js/main.576b17cb.js"
+    "static/css/main.1f50dc06.css",
+    "static/js/main.20b90b3d.js"
   ]
 }
