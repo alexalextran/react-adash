@@ -7,11 +7,11 @@ import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="https://alexalextran.github.io/react-adash/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
         <Footer />
       </div>
