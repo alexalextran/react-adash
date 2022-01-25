@@ -2,11 +2,11 @@ import React from 'react';
 
 const Navlinks = (link) => {
     return (
-        <div className='link'>
-        <a>
+        
+        <p className='link'>
      {link.name}
-        </a>
-    </div>
+        </p>
+    
     );
 }
 

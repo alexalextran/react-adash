@@ -33,12 +33,11 @@ const Nav = () => {
       </div>
 
       <div className="nav__links flex-row">
-        <Navlinks name="Home" />
-        <Navlinks name="About Us" />
-        <Navlinks name="Why us?" />
-        <Navlinks name="Statistics" />
-        <Navlinks name="Testimonials" />
-        <Navlinks name="Contact & Support" />
+        <a href="#Home"><Navlinks name="Home" /></a>
+        <a href="#Aboutus"> <Navlinks name="About Us" /></a>
+        <a href="#Whyus"><Navlinks name="Why us?" /></a>
+        <a href="#Testimonials"><Navlinks name="Testimonials" /></a>
+        <a href="#contact"><Navlinks name="Contact & Support" /></a>
       </div>
     </nav>
   );
