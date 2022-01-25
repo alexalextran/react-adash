@@ -42,17 +42,17 @@ const Contactus = () => {
 
             <label>Name
             <br/>
-            <input type="text" required></input>
+            <input type="text" required className='input'></input>
             </label>
             <br/>
             <label>Email
             <br/>
-            <input type="email" required></input>
+            <input type="email" required className='input'></input>
             <br/>
             </label>
             <label>Subject
             <br/>
-            <textarea></textarea>
+            <textarea className='textarea'></textarea>
             </label>
             <button className='form__button'>Send</button>
 
