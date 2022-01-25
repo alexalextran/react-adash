@@ -13,8 +13,11 @@
   word-spacing: 1.2px;
 }
 
+
+
 html{
   background-color: #5f0e0e;
+  width: 100%;
 }
 
 a{
@@ -110,11 +113,6 @@ NAVIGATION
 
 
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
 
 .logo__img{
   width: 50px;
@@ -155,7 +153,7 @@ nav{
   justify-content: space-between;
   width: 100%;
   background-color: rgb(24, 24, 24);
-  padding: 40px 10%;
+  padding: 40px 0;
   color: white;
   z-index: 100;
   height: 120px;
@@ -285,6 +283,7 @@ HOME
   flex-direction: column;
   min-height: 850px;
   max-height: 1000px;
+  width: 100%;
 }
 
 
@@ -1081,4 +1080,95 @@ Videosection
   font-size: 42px;
   font-weight: 500;
   cursor: pointer;
+}
+
+
+@media(max-width: 1024px) {
+
+
+  
+nav{
+  font-size: 12px;
+}
+
+.link{
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
+}
+
+.nav__links{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar{
+  padding: 20px 0px;
+
+
+}
+
+.nav__logo{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+iframe{
+  width: 700px;
+  height: 400px;
+}
+
+.home__paragraph{
+  font-size: 16px;
+}
+
+.aboutus__text{
+  font-size: 20px;
+}
+
+.cardicon{
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+}
+
+.card__summary{
+  font-size: 12px;
+}
+
+#YTvideos{
+max-height: 700px;
+min-height: 700px;
+}
+
+.whyus__title{
+  font-size: 20px;
+}
+
+.whyussvg{
+  width:250px;
+  height: 250px;
+}
+
+.whyus__card--text{
+  font-size: 12px;
+}
+
+.line{
+  left: 32%;
+}
+
+.testimonial__title{
+  font-size: 40px;
+}
+.testimonial__subtitle{
+  font-size: 20px;
+}
+
+.testimonial__cards{
+  font-size: 12px;
+}
 }
