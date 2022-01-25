@@ -57,6 +57,7 @@ const Home = () => {
 
         <p className="home__paragraph">Welcome to A-Dash (A-) Academy. We focus on a range of topics in Chemistry, Physics, Mathematics and Science Extension. Practise makes Perfect! We are a young organisation starting out so we need your help! Hit that subscribe button. Continue watching our videos. Witness us grow and help many more people around the globe - free of charge.</p>
 
+<a href="https://www.youtube.com/channel/UC2TuAzbHxLIZwJqlofj_oXw" target="_blank">
        <button className="cssbuttons-io-button">
           Explore Our Channel!
           <div className="icon">
@@ -73,7 +74,7 @@ const Home = () => {
               ></path>
             </svg>
           </div>
-        </button>
+        </button></a>
       </div> 
       
     </section>
