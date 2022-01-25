@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Nav />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="https://alexalextran.github.io/react-adash/" element={<HomePage />} />
         </Routes>
         <Footer />
       </div>
