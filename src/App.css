@@ -1130,6 +1130,20 @@ Videosection
   cursor: pointer;
 }
 
+.videosection__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.videosection__card{
+  height: 200px;
+  width: 300px;
+  margin: 20px 20px;
+  background-color: white;
+}
+
 @media(max-width: 1440px) {
 
   .link{

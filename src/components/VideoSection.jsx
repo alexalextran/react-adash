@@ -5,10 +5,12 @@ import React, { useEffect, useState } from "react";
 const Videosection = () => {
   const [data, setdata] = useState();
   const [playlistid, setplaylistid] = useState();
+  const [videos, setvideos] = useState();
+  
 
   useEffect(() => {
     getPlaylistId();
-  }, []);
+  }, [videos]);
 
   async function getPlaylistId() {
     const { data } = await axios.get(
@@ -16,15 +18,15 @@ const Videosection = () => {
     );
 
     setdata(data);
-    console.log(data);
+    
   }
 
   async function getVideos() {
     var { data } = await axios.get(
       `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playlistid}&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     );
-    console.log(data.items)
-
+    setvideos(data.items)
+    videohtml()
   }
 
   function getId(name) {
@@ -32,11 +34,33 @@ const Videosection = () => {
       if (data.items[i].snippet.title == name) {
         setplaylistid(data.items[i].id);
         getVideos()
+        
         break;
       }
     }
   }
 
+
+  function videohtml(){
+    const videowrapper = document.querySelector('.videosection__wrapper')
+    
+    
+    videowrapper.innerHTML = videos.map((video) => html(video)).join('')
+   console.log("well this is odd")
+  }
+
+  function html(video){
+    return `<div class="videosection__card"> 
+    Video 
+
+    <div class="videosection__card--title">
+    ${video.snippet.title}
+    </div>
+     
+    </div>
+    
+    `
+  }
  
 
 
@@ -45,19 +69,26 @@ const Videosection = () => {
       <div id="videosection__nav">
         <ul className="videosection__topics flex-row">
           <li
-            onClick={() => getId("Physics")}
-            className="videosection__topic gold"
+            onClick={() => 
+            {for(let i = 0; i < 3; i++)
+            getId("Physics")}
+            }className="videosection__topic gold"
           >
             Physics
           </li>
           <li
-            onClick={() => getId("Chemistry")}
+            onClick={() => 
+              {for(let i = 0; i < 3; i++)
+              getId("Chemistry")}
+            }
             className="videosection__topic gold"
           >
             Chemistry
           </li>
           <li
-            onClick={() => getId("Mathematics")}
+            onClick={() =>  {for(let i = 0; i < 3; i++)
+            getId("Mathematics")}
+            }
             className="videosection__topic gold"
           >
             Math
@@ -77,6 +108,10 @@ const Videosection = () => {
             icon="search"
           />
         </form>
+      </div>
+
+      <div className="videosection__wrapper">
+
       </div>
     </section>
   );
