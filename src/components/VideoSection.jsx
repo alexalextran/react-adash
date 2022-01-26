@@ -1,16 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { isCompositeComponent } from "react-dom/cjs/react-dom-test-utils.production.min";
 
 const Videosection = () => {
   const [data, setdata] = useState();
-  const [playlistid, setplaylistid] = useState();
-  const [videos, setvideos] = useState();
+
+
   
 
   useEffect(() => {
     getPlaylistId();
-  }, [videos]);
+  }, []);
 
   async function getPlaylistId() {
     const { data } = await axios.get(
@@ -21,19 +22,20 @@ const Videosection = () => {
     
   }
 
-  async function getVideos() {
+  async function getVideos(id) {
     var { data } = await axios.get(
-      `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${playlistid}&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
+      `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${id}&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     );
-    setvideos(data.items)
-    videohtml()
+    var lol = data.items
+    videohtml(lol)
   }
 
   function getId(name) {
     for (let i = 0; i < data.items.length; i++) {
       if (data.items[i].snippet.title == name) {
-        setplaylistid(data.items[i].id);
-        getVideos()
+        var id=(data.items[i].id)
+        console.log(id)
+        getVideos(id)
         
         break;
       }
@@ -41,18 +43,15 @@ const Videosection = () => {
   }
 
 
-  function videohtml(){
+  function videohtml(lol){
     const videowrapper = document.querySelector('.videosection__wrapper')
-    
-    
-    videowrapper.innerHTML = videos.map((video) => html(video)).join('')
-   console.log("well this is odd")
+    videowrapper.innerHTML = lol.map((video) => html(video)).join('')
+ 
   }
 
   function html(video){
     return `<div class="videosection__card"> 
     Video 
-
     <div class="videosection__card--title">
     ${video.snippet.title}
     </div>
@@ -70,25 +69,25 @@ const Videosection = () => {
         <ul className="videosection__topics flex-row">
           <li
             onClick={() => 
-            {for(let i = 0; i < 3; i++)
+            
             getId("Physics")}
-            }className="videosection__topic gold"
+            className="videosection__topic gold"
           >
             Physics
           </li>
           <li
             onClick={() => 
-              {for(let i = 0; i < 3; i++)
+              
               getId("Chemistry")}
-            }
+            
             className="videosection__topic gold"
           >
             Chemistry
           </li>
           <li
-            onClick={() =>  {for(let i = 0; i < 3; i++)
+            onClick={() =>  
             getId("Mathematics")}
-            }
+            
             className="videosection__topic gold"
           >
             Math
