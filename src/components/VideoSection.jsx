@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Videocard from "./ui/VideoCard";
 
 
 const Videosection = () => {
   const [data, setdata] = useState();
+  const [state, setstate] = useState(false);
 
 
   
@@ -36,7 +38,7 @@ const Videosection = () => {
         var id=(data.items[i].id)
         console.log(id)
         getVideos(id)
-        
+        setstate(true)
         break;
       }
     }
@@ -49,10 +51,16 @@ const Videosection = () => {
  
   }
 
+  function getplayer(){
+      console.log('he')
+  }
+
   function html(video){
     console.log(video.snippet.thumbnails)
-    return `<div class="videosection__card"> 
-    <img src="${(video.snippet.thumbnails.medium.url)}"/>
+    return `<div class="videosection__card" > 
+      <div class="videosection__card--desc"> ${video.snippet.description}</div>
+    <img class="videosection__thumbnail" src="${(video.snippet.thumbnails.medium.url)}"/>
+  
     <div class="videosection__card--title">
     ${video.snippet.title}
     </div>
@@ -116,6 +124,8 @@ const Videosection = () => {
       <div className="videosection__wrapper">
 
       </div>
+
+      {state == true && <Videocard />}
     </section>
   );
 };

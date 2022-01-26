@@ -1067,6 +1067,7 @@ Videosection
 #videosection{
   background-color: #5f0e0e;
   height: fit-content;
+  min-height: 100vh;
 }
 
 #videosection__nav{
@@ -1142,7 +1143,51 @@ Videosection
   height: 240px;
   width: 320px;
   margin: 20px 20px;
-  background-color: white;
+  background-color: rgb(24,24,24);
+  position: relative;
+  cursor: pointer;
+}
+
+.videosection__thumbnail{
+  opacity: 1;
+  z-index: 100;
+  position: relative;
+  transition: all 500ms;
+}
+
+.videosection__thumbnail:hover{
+opacity: 0;
+ 
+}
+
+
+.videosection__card--desc{
+  background-color: #3b0000;
+  height: 180px;
+  width: 320px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 0px 10px;
+  font-size: 18px;
+  
+  
+}
+
+.videosection__card--title{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(24,24,24);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  height: 60px;
+  padding: 0px 10px;
+
 }
 
 @media(max-width: 1440px) {
