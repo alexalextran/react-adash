@@ -112,7 +112,11 @@ NAVIGATION
 */ 
 
 
-
+.nav__logo{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
 
 .logo__img{
   width: 50px;
@@ -461,6 +465,7 @@ HOME
    color: rgb(95,14,14);
    transition: all 800ms;
    padding: 0px 24px;
+   font-size: 12px;
  }
  .card__summary:hover{
   
@@ -620,6 +625,7 @@ HOME
  .whyus__card--text{
    width: 60%;
    padding-bottom: 40px;
+   font-size: 14px;
 
  }
 
@@ -655,7 +661,7 @@ HOME
   color: red;
    font-size: 60px;
    top: 17px;
-   right: 110px;
+   left: 39%;
    animation: line 2s infinite alternate-reverse;
    
  }
@@ -761,11 +767,12 @@ HOME
    height: 90vh;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+
    background-color: rgb(61,0,0);
    align-items: center;
    min-height: 750px;
   max-height: 1100px;
+  position: relative;
   
  }
 
@@ -781,6 +788,12 @@ HOME
   color: rgb(199,98,109);
   font-weight: 400;
 }
+
+.testimonial__details{
+  position: absolute;
+  bottom: 40px;
+}
+
  .testimonial__wrapper{
    max-width: 2000px;
    display: flex;
@@ -796,6 +809,7 @@ HOME
   padding: 60px 0px; 
   color: white;
   align-items: center;
+  
  }
 
  .image__wrapper{
@@ -1082,6 +1096,166 @@ Videosection
   cursor: pointer;
 }
 
+@media(max-width: 1440px) {
+
+  .link{
+    font-size: 18px;
+  }
+  
+  .nav__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home__paragraph{
+    font-size: 20px;
+  }
+  
+  .aboutus__text{
+    font-size: 28px;
+  }
+  .cardicon{
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+  }
+  
+  .card__summary{
+    font-size: 14px;
+  }
+  iframe{
+    width: 900px;
+    height: 500px;
+  }
+  #YTvideos{
+    max-height: 800px;
+    min-height: 800px;
+    }
+  
+    
+    .whyus__title{
+      font-size: 32px;
+    }
+    
+    .whyussvg{
+      width:250px;
+      height: 250px;
+    }
+    
+    .whyus__card--text{
+      font-size: 14px;
+     
+    }
+    
+    .line{
+      left: 38%;
+    }
+    .testimonial__title{
+      font-size: 60px;
+    
+    }
+    .testimonial__subtitle{
+      font-size: 40px;
+    }
+  
+    .whyus__card--para{
+      line-height: 2;
+    }
+    
+    .testimonial__cards{
+      font-size: 1px;
+      padding-top: 14px;
+     
+    
+    }
+}
+
+
+
+@media(max-width: 1350px) {
+    
+nav{
+  font-size: 12px;
+}
+.link{
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px 30px;
+}
+
+.nav__links{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__paragraph{
+  font-size: 18px;
+}
+
+.aboutus__text{
+  font-size: 26px;
+}
+.cardicon{
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+}
+
+.card__summary{
+  font-size: 14px;
+}
+iframe{
+  width: 900px;
+  height: 500px;
+}
+#YTvideos{
+  max-height: 800px;
+  min-height: 800px;
+  }
+
+  
+  .whyus__title{
+    font-size: 32px;
+  }
+  
+  .whyussvg{
+    width:250px;
+    height: 250px;
+  }
+  
+  .whyus__card--text{
+    font-size: 14px;
+   
+  }
+  
+  .line{
+    left: 37%;
+  }
+  .testimonial__title{
+    font-size: 60px;
+  
+  }
+  .testimonial__subtitle{
+    font-size: 40px;
+  }
+
+  .whyus__card--para{
+    line-height: 2;
+  }
+  
+  .testimonial__cards{
+    font-size: 12px;
+    padding-top: 14px;
+   
+  
+  }
+  
+
+}
+
 
 @media(max-width: 1024px) {
 
@@ -1110,11 +1284,7 @@ nav{
 
 }
 
-.nav__logo{
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-}
+
 
 iframe{
   width: 700px;
@@ -1157,6 +1327,7 @@ min-height: 700px;
   font-size: 12px;
 }
 
+
 .line{
   left: 32%;
 }
@@ -1168,7 +1339,17 @@ min-height: 700px;
   font-size: 20px;
 }
 
+.whyus__card--para{
+  line-height: 2;
+}
+
 .testimonial__cards{
   font-size: 12px;
+  padding-top: 14px;
+ 
+
+}
+footer{
+  height: 200px;
 }
 }
