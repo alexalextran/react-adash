@@ -21,6 +21,7 @@ useEffect(() => {
     setviewcount(data.items[0].statistics.viewCount);
     setsubscribercount(data.items[0].statistics.subscriberCount);
   }
+  
 
   function animate(obj, initVal, lastVal, duration) {
     let startTime = null;

@@ -1,14 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import React, { useEffect} from "react";
+import React, { useEffect, useState} from "react";
 
 const Videosection = () => {
 
-
+const [data, setdata] = useState();
 
   useEffect(() => {
     getPlaylistId()
-  });
+  },[]);
+
+  
 
 
   async function getPlaylistId(){
@@ -16,19 +18,32 @@ const Videosection = () => {
       `https://youtube.googleapis.com/youtube/v3/playlists?part=id%2C%20snippet&channelId=UC2TuAzbHxLIZwJqlofj_oXw&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     )
 
-      console.log(data.items[0].snippet.title)
+    setdata(data)
 
+      console.log(data)
   }
 
+
+  function getId(name){
+
+    for (let i = 0; i < data.items.length ; i++) {
+      if(data.items[i].snippet.title == name){
+        console.log(data.items[i].id)
+        break
+      }
+    }
+
+     
+  }
 
 
   return (
     <section id="videosection">
       <div id="videosection__nav">
         <ul className="videosection__topics flex-row">
-          <li className="videosection__topic gold">Physics</li>
-          <li className="videosection__topic gold">Chemistry</li>
-          <li className="videosection__topic gold">Math</li>
+          <li onClick={() => getId("Physics")} className="videosection__topic gold">Physics</li>
+          <li onClick={() => getId("Chemistry")}className="videosection__topic gold">Chemistry</li>
+          <li onClick={() => getId("Mathematics")}className="videosection__topic gold">Math</li>
         </ul>
 
         
