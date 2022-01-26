@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { isCompositeComponent } from "react-dom/cjs/react-dom-test-utils.production.min";
+
 
 const Videosection = () => {
   const [data, setdata] = useState();
@@ -50,11 +50,15 @@ const Videosection = () => {
   }
 
   function html(video){
+    console.log(video.snippet.thumbnails)
     return `<div class="videosection__card"> 
-    Video 
+    <img src="${(video.snippet.thumbnails.medium.url)}"/>
     <div class="videosection__card--title">
     ${video.snippet.title}
     </div>
+
+
+
      
     </div>
     
