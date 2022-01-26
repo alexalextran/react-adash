@@ -29,11 +29,10 @@ const Videosection = () => {
     var { data } = await axios.get(
       `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${id}&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     );
-    var lol = data.items
+    
     setvideoarray(data.items)
-    console.log(videoarray)
-    videohtml(lol)
-    console.log(lol)
+    
+   
   }
 
   function getId(name) {
@@ -49,33 +48,10 @@ const Videosection = () => {
   }
 
 
-  function videohtml(lol){
-    const videowrapper = document.querySelector('.videosection__wrapper')
-    videowrapper.innerHTML = lol.map((video) => html(video)).join('')
+  console.log(videoarray)
+
  
-  }
-
-  function getplayer(){
-      console.log('he')
-  }
-
-  function html(video){
-    
-    return `<div class="videosection__card" > 
-      <div class="videosection__card--desc"> ${video.snippet.description}</div>
-    <img class="videosection__thumbnail" src="${(video.snippet.thumbnails.medium.url)}"/>
-  
-    <div class="videosection__card--title">
-    ${video.snippet.title}
-    </div>
-
-
-
-     
-    </div>
-    
-    `
-  }
+ 
  
 
  
@@ -127,12 +103,16 @@ const Videosection = () => {
       </div>
 
       <div className="videosection__wrapper">
+ {state == true &&
+
+        videoarray.map((vid, index) => <Videocard video={vid} key={index}/>) }
+      </div>
+
+      <div id="videoplayer">
 
       </div>
 
-      {state == true &&
-
-        videoarray.map(() => <Videocard />) }
+     
     </section>
   );
 };

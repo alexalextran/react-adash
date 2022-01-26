@@ -23,6 +23,7 @@ const Nav = () => {
     <nav id="navbar">
       <div className="nav__logo flex-row">
         <img className="logo__img" src={logo}></img>
+        
 
         <div>
           <h1>A- Academy</h1>
