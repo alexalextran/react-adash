@@ -7,6 +7,7 @@ import Videocard from "./ui/VideoCard";
 const Videosection = () => {
   const [data, setdata] = useState();
   const [state, setstate] = useState(false);
+  const [videoarray, setvideoarray] = useState([])
 
 
   
@@ -29,7 +30,10 @@ const Videosection = () => {
       `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${id}&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     );
     var lol = data.items
+    setvideoarray(data.items)
+    console.log(videoarray)
     videohtml(lol)
+    console.log(lol)
   }
 
   function getId(name) {
@@ -56,7 +60,7 @@ const Videosection = () => {
   }
 
   function html(video){
-    console.log(video.snippet.thumbnails)
+    
     return `<div class="videosection__card" > 
       <div class="videosection__card--desc"> ${video.snippet.description}</div>
     <img class="videosection__thumbnail" src="${(video.snippet.thumbnails.medium.url)}"/>
@@ -74,6 +78,7 @@ const Videosection = () => {
   }
  
 
+ 
 
   return (
     <section id="videosection">
@@ -125,7 +130,9 @@ const Videosection = () => {
 
       </div>
 
-      {state == true && <Videocard />}
+      {state == true &&
+
+        videoarray.map(() => <Videocard />) }
     </section>
   );
 };
