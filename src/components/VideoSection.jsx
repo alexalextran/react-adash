@@ -103,9 +103,16 @@ const Videosection = () => {
       </div>
 
       <div className="videosection__wrapper">
- {state == true &&
 
-        videoarray.map((vid, index) => <Videocard video={vid} key={index}/>) }
+     
+ {state == true &&
+        
+        
+        
+
+        videoarray.map((vid, index) => <Videocard video={vid} key={index}/>) 
+        }
+        
       </div>
 
       <div id="videoplayer">
