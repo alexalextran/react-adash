@@ -8,6 +8,7 @@ const Videosection = () => {
   const [data, setdata] = useState();
   const [state, setstate] = useState(false);
   const [videoarray, setvideoarray] = useState([])
+ 
 
 
   
@@ -48,7 +49,13 @@ const Videosection = () => {
   }
 
 
-  console.log(videoarray)
+
+
+ function playervisibility(){
+ var videoplayer_html = (document.querySelector(".videoplayer__screen"))  
+ console.log(videoplayer_html)
+ videoplayer_html.classList.add("notvisible")
+ }
 
  
  
@@ -110,15 +117,15 @@ const Videosection = () => {
         
         
 
-        videoarray.map((vid, index) => <Videocard video={vid} key={index}/>) 
+        videoarray.map((vid, index) => <Videocard video={vid}  key={index}/>) 
         }
         
       </div>
 
       <div id="videoplayer">
-
+      
       </div>
-
+<FontAwesomeIcon icon="times" className="videoplayer__exit" onClick={() => playervisibility()}/>
      
     </section>
   );

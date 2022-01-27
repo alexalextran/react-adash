@@ -6,7 +6,7 @@ const Videos = () => {
     
     return (
         <>
-            <Videosection stickynav={false}/>
+            <Videosection />
        </>
     );
 }
