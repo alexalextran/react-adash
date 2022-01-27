@@ -68,31 +68,40 @@ const Videosection = () => {
     <section id="videosection">
       <div id="videosection__nav">
         <ul className="videosection__topics flex-row">
-          <li
+          <div
             onClick={() => 
             
             getId("Physics")}
             className="videosection__topic gold"
           >
+           <span className="carousel__button ">
+            <FontAwesomeIcon icon="atom" />
+          </span>
             Physics
-          </li>
-          <li
+          </div>
+          <div
             onClick={() => 
               
               getId("Chemistry")}
             
             className="videosection__topic gold"
           >
+           <span className="carousel__button ">
+            <FontAwesomeIcon icon="superscript" />
+          </span>
             Chemistry
-          </li>
-          <li
+          </div>
+          <div
             onClick={() =>  
             getId("Mathematics")}
             
             className="videosection__topic gold"
           >
+           <span className="carousel__button ">
+            <FontAwesomeIcon icon="atom" />
+          </span>
             Math
-          </li>
+          </div>
         </ul>
 
         <form className="videosection__searchbar">
