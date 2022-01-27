@@ -1,16 +1,25 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 
 const Videocard = (video) => {
-    const [data, setdata] = useState(video.video.snippet.resourceId.videoId);
-   
 
-    function videolarge(ye){ 
-        setdata("nothing")
-        setdata(ye)
-       var hi = document.getElementById("videoplayer")
-       hi.innerHTML = ""
-       hi.innerHTML += `<iframe class="videoplayer" width="980" height="570" src="//www.youtube.com/embed/${data}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreenu003eu003c" iframe/>`
+    useEffect(() => {
+        
+            setdata(video.video.snippet.resourceId.videoId)
+        
+        return () => {
+            setdata("nothing")
+        };
+    });
+
+
+    const [data, setdata] = useState(video.video.snippet.resourceId.videoId);
+    const [htmlelement, sethtmlelement] = useState(document.getElementById("videoplayer"))
+
+    function videolarge(clickdata){ 
+        setdata(clickdata)
+        htmlelement.innerHTML = ""
+        htmlelement.innerHTML += `<iframe class="videoplayer" width="980" height="570" src="//www.youtube.com/embed/${data}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreenu003eu003c" iframe/>`
        
         console.log(data)
       
