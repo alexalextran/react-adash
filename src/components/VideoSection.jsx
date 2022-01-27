@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Videocard from "./ui/VideoCard";
+import { Link } from 'react-router-dom'
 
 
 const Videosection = () => {
@@ -58,7 +59,15 @@ const Videosection = () => {
  videoplayer_html.innerHTML = ""
  }
 
- 
+ function sort(e){
+  e.preventDefault();
+  console.log("sort")
+  
+  
+  let result = videoarray.map( (obj) => ({date: obj.snippet.publishedAt, id: obj.snippet.resourceId.videoId}) );
+  console.log(result)
+  
+ }
  
  
 
@@ -68,11 +77,11 @@ const Videosection = () => {
     <section id="videosection">
       <div id="videosection__nav">
         <ul className="videosection__topics flex-row">
-          <div
+          <div 
             onClick={() => 
             
             getId("Physics")}
-            className="videosection__topic gold"
+            className="videosection__topic gold clickable "
           >
            <span className="carousel__button ">
             <FontAwesomeIcon icon="atom" />
@@ -84,7 +93,7 @@ const Videosection = () => {
               
               getId("Chemistry")}
             
-            className="videosection__topic gold"
+            className="videosection__topic gold clickable"
           >
            <span className="carousel__button ">
             <FontAwesomeIcon icon="superscript" />
@@ -95,7 +104,7 @@ const Videosection = () => {
             onClick={() =>  
             getId("Mathematics")}
             
-            className="videosection__topic gold"
+            className="videosection__topic gold clickable"
           >
            <span className="carousel__button ">
             <FontAwesomeIcon icon="atom" />
@@ -104,23 +113,30 @@ const Videosection = () => {
           </div>
         </ul>
 
-        <form className="videosection__searchbar">
+        <form className="videosection__searchbar" onSubmit={(event) => sort(event)}>
           <input className="videosection__searchbar--input"></input>
 
-          <select className="videosection__searchbar--select">
+          <select className="videosection__searchbar--select" >
             <option value="saab">Sort By</option>
             <option value="volvo">Popularity</option>
             <option value="saab">Date</option>
           </select>
+          <button className="videosection__searchbar--icon">
           <FontAwesomeIcon
-            className="videosection__searchbar--icon"
+            
             icon="search"
-          />
+          /></button>
         </form>
+
+        <Link to="/"><button className="homebutton clickable">
+          Home
+          <FontAwesomeIcon icon="home"/>
+        </button> 
+        </Link>
       </div>
-
+    
       <div className="videosection__wrapper">
-
+     
      
  {state == true &&
         
@@ -136,7 +152,7 @@ const Videosection = () => {
       
       </div>
 
-     
+      
     </section>
   );
 };
