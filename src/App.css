@@ -1196,6 +1196,7 @@ opacity: 0;
   animation-name: fade;
   animation-duration: 1s; 
   z-index: 1;
+  position: relative;
 }
 
 
@@ -1217,15 +1218,19 @@ opacity: 0;
   visibility: hidden;
 }
 
-.videoplayer__exit{
+.videoplayer__text{
+  color: white;
+  font-size: 30px;
   position: absolute;
-  color: rgb(255, 0, 0);
-  font-size: 100px;
   z-index: 100;
-  cursor: pointer;
-  top: 50px;
-  right: 50px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+ 
 }
+
+
 
  @keyframes fade{
   0%{

@@ -23,8 +23,12 @@ const Videocard = (video) => {
         `<div class="videoplayer__screen">
 
         <div class="videoplayer__wrapper">
+        <p class="videoplayer__text"> Click outside the video to exit </p>
         <iframe class="videoplayer" width="980" height="570" src="//www.youtube.com/embed/${data}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreenu003eu003c" iframe/>
+        
        <div>
+        
+       
         </div>`
         console.log(data)
       
@@ -33,7 +37,6 @@ const Videocard = (video) => {
     
    
     return (
-        
        
            <div className="videosection__card" onClick={() => 
            videolarge(video.video.snippet.resourceId.videoId)}> 

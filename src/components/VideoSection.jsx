@@ -55,6 +55,7 @@ const Videosection = () => {
  var videoplayer_html = (document.querySelector(".videoplayer__screen"))  
  console.log(videoplayer_html)
  videoplayer_html.classList.add("notvisible")
+ videoplayer_html.innerHTML = ""
  }
 
  
@@ -122,10 +123,10 @@ const Videosection = () => {
         
       </div>
 
-      <div id="videoplayer">
+      <div id="videoplayer" onClick={() => playervisibility()}>
       
       </div>
-<FontAwesomeIcon icon="times" className="videoplayer__exit" onClick={() => playervisibility()}/>
+
      
     </section>
   );
