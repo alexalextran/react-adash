@@ -1148,7 +1148,23 @@ Videosection
   align-items: center;
   justify-content: center;
   visibility: visible;
+    animation-name: fade__effect;
+    animation-duration: 300ms;
+   
 }
+
+@keyframes fade__effect {
+  0% {
+    opacity: 0;
+
+  }
+  
+  100% {
+    background: rgba(0, 0, 0, 0.8);
+   
+  }
+}
+
 
 .videoplayer__screen.notvisible {
   visibility: hidden;
