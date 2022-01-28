@@ -40,7 +40,6 @@ const Videosection = () => {
       if (data.items[i].snippet.title == name) {
         var id = data.items[i].id;
         setvideoid(id);
-        console.log(id);
         getVideos(id);
         
         setstatealt(false);
@@ -140,7 +139,8 @@ const Videosection = () => {
 
       <div className="videosection__wrapper">
         {state == true &&
-          videoarray.map((vid, index) => <Videocard video={vid} key={index} />)}
+          videoarray.map((vid, index) => (
+          <Videocard video={vid} key={index} />))}
 
         {statealt == true &&
           otherarray.map((vid, index) => (
