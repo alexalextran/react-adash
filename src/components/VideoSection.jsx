@@ -60,21 +60,24 @@ const Videosection = () => {
     event.preventDefault();
     setstatealt(false);
     getVideos(videoid);
-    
+    const searchvalues = []
+    var filtered__array = []
     var searchvalue = document.getElementById("video__search").value.toLowerCase().split(" ");
     if (searchvalue == "") {
       return;
     }
-    breakme: for (let i = 0; i < videoarray.length; i++) {
+    for (let i = 0; i < videoarray.length; i++) {
       if (videoarray[i].snippet.title.toLowerCase().includes(searchvalue)) {
-        var selected = videoarray[i].id;
-
-        break breakme;
+        searchvalues.push(videoarray[i].id)
       }
     }
+  
+    (filtered__array = videoarray.filter( video =>
+      searchvalues.includes(video.id)))
 
-    var filtered__array = videoarray.filter((video) => video.id == selected);
 
+    console.log(searchvalues)
+    console.log(filtered__array)
     setotherarray(filtered__array);
     setstate(false);
     setstatealt(true);
