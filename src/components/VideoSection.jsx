@@ -34,12 +34,16 @@ const Videosection = () => {
   }
 
   function getId(name) {
+    setotherarray([])
+    setvideoarray([])
     for (let i = 0; i < data.items.length; i++) {
       if (data.items[i].snippet.title == name) {
         var id = data.items[i].id;
         setvideoid(id);
         console.log(id);
         getVideos(id);
+        
+        setstatealt(false);
         setstate(true);
         break;
       }
@@ -55,8 +59,9 @@ const Videosection = () => {
 
   async function search(event) {
     event.preventDefault();
+    setstatealt(false);
     getVideos(videoid);
-
+    
     var searchvalue = document.getElementById("video__search").value.toLowerCase().split(" ");
     if (searchvalue == "") {
       return;
