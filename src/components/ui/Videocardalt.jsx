@@ -1,18 +1,18 @@
 import React, {useState, useEffect} from 'react';
 
 
-const Videocard = (video) => {
+const Videocardalt = (video) => {
 
     useEffect(() => {
         
-            setdata(video.video.snippet.resourceId.videoId)
+            setdata(video)
         
         return () => {
             setdata("nothing")
         };
     });
 
- 
+  
 
     const [data, setdata] = useState(video.video.snippet.resourceId.videoId);
     const [htmlelement, sethtmlelement] = useState(document.getElementById("videoplayer"))
@@ -56,4 +56,4 @@ const Videocard = (video) => {
     )
 }
 
-export default Videocard;
+export default Videocardalt;
