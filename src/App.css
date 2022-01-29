@@ -1207,6 +1207,49 @@ Videosection
   }
 }
 
+.videosection__loading--image{
+  width: 200px;
+  height: 186px;
+  display: flex;
+  margin: 40px auto;
+  animation: loading 4s infinite ;
+  
+}
+
+.videosection__loading{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+
+.videosection__loading--title{
+  animation: loading__text 1s infinite alternate;
+}
+
+@keyframes loading__text{
+  0%{
+    color: white;
+  }
+  100% {
+    color: rgb(255,226,9);
+  }
+
+}
+
+@keyframes loading {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
 @media (max-width: 1440px) {
   .link {
     font-size: 18px;

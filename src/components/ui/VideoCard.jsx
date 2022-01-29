@@ -2,18 +2,21 @@ import React, {useState, useEffect} from 'react';
 
 
 const Videocard = (video) => {
+    
 
     useEffect(() => {
-        
+
+            
             setdata(video.video.snippet.resourceId.videoId)
-        
+            
         return () => {
             setdata("nothing")
+            
         };
-    });
+    },[]);
 
  
-
+   
     const [data, setdata] = useState(video.video.snippet.resourceId.videoId);
     const [htmlelement, sethtmlelement] = useState(document.getElementById("videoplayer"))
 
@@ -31,13 +34,18 @@ const Videocard = (video) => {
         
        
         </div>`
-        console.log(data)
+       
       
     }
+   
 
-    
+ 
    
     return (
+     
+      
+
+
        
            <div className="videosection__card" onClick={() => 
            videolarge(video.video.snippet.resourceId.videoId)}> 
@@ -52,7 +60,7 @@ const Videocard = (video) => {
 
      
     </div>
-       
+      
     )
 }
 

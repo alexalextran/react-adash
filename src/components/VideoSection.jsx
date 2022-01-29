@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Videocard from "./ui/VideoCard";
 import { Link } from "react-router-dom";
 import Videocardalt from "./ui/Videocardalt";
+import loadingimage from "../assets/Atom.svg.png"
 
 const Videosection = () => {
   const [data, setdata] = useState();
@@ -12,6 +13,8 @@ const Videosection = () => {
   const [videoid, setvideoid] = useState();
   const [statealt, setstatealt] = useState(false);
   const [otherarray, setotherarray] = useState([]);
+  const [loading, setloading] = useState(false);
+  
 
   useEffect(() => {
     getPlaylistId();
@@ -29,11 +32,13 @@ const Videosection = () => {
     var { data } = await axios.get(
       `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=${id}&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     );
-
+   setloading(false)
     setvideoarray(data.items);
   }
 
   function getId(name) {
+    setloading(true)
+
     setotherarray([])
     setvideoarray([])
     for (let i = 0; i < data.items.length; i++) {
@@ -141,14 +146,32 @@ const Videosection = () => {
       </div>
 
       <div className="videosection__wrapper">
-        {state == true &&
+        
+        { loading == true && 
+          <div className="videosection__loading">
+
+            <img className="videosection__loading--image" src={loadingimage}/>
+            <p className="videosection__loading--title">
+              Loading...
+            </p>
+          </div>
+        }
+        
+
+
+          {state == true &&
           videoarray.map((vid, index) => (
-          <Videocard video={vid} key={index} />))}
+          <Videocard video={vid} key={index} />))
+          }
+       
 
         {statealt == true &&
           otherarray.map((vid, index) => (
             <Videocardalt video={vid} key={index} />
-          ))}
+          ))
+
+          } 
+        
       </div>
 
       <div id="videoplayer" onClick={() => playervisibility()}></div>
