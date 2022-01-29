@@ -23,8 +23,7 @@ const HomePage = () => {
   let i = 1
 
     document.addEventListener("scroll", function () {
-      section[i].style.animation = "fade"
-      section[i].style.animationDuration = "3s"
+     
      
       var clientHeight = document.documentElement.clientHeight;
        
@@ -34,7 +33,10 @@ const HomePage = () => {
       var statsSectionHeight = section[i].getBoundingClientRect().height; 
      
     
-      if (clientHeight > sectionY + (statsSectionHeight * 1.)) {
+      if (clientHeight > sectionY + (statsSectionHeight * 0.1)) { 
+        section[i].style.animation = "fade"
+      section[i].style.animationDuration = "1.5s"
+      section[i].style.visibility = "visible"
         i++
        console.log("oh no bro")
        

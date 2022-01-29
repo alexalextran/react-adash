@@ -16,9 +16,9 @@ html {
   width: 100%;
 }
 
-/* section{
+ section{
   visibility: hidden;
-} */
+}
 
 a {
   text-decoration: none;
@@ -1009,6 +1009,7 @@ Videosection
   height: fit-content;
   min-height: 100vh;
   position: relative;
+  visibility: visible;
 }
 
 #videosection__nav {
