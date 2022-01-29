@@ -1077,6 +1077,11 @@ Videosection
   flex-direction: column;
 }
 
+.videosection__nav--info {
+ color: white;
+ margin-bottom: 10px;
+}
+
 .videosection__searchbar {
   margin-top: 50px;
   display: flex;

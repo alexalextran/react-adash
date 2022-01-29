@@ -91,6 +91,7 @@ const Videosection = () => {
   return (
     <section id="videosection">
       <div id="videosection__nav">
+     <p className="videosection__nav--info">Please select a category first!</p> 
         <ul className="videosection__topics flex-row">
           <div
             onClick={() => getId("Physics")}
