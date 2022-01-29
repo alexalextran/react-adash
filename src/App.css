@@ -16,6 +16,10 @@ html {
   width: 100%;
 }
 
+/* section{
+  visibility: hidden;
+} */
+
 a {
   text-decoration: none;
   color: inherit;
@@ -270,6 +274,8 @@ HOME
   min-height: 850px;
   max-height: 1000px;
   width: 100%;
+  animation: fade__simple 1s ease-in;
+  visibility: visible;
 }
 
 .homesvg {
@@ -1091,6 +1097,7 @@ Videosection
   background-color: rgb(24, 24, 24);
   position: relative;
   cursor: pointer;
+  animation: fade__simple ease-in 500ms  ;
 }
 
 .videosection__thumbnail {
@@ -1192,6 +1199,17 @@ Videosection
 }
 
 
+@keyframes fade__simple{
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes fade {
   0% {

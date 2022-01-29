@@ -4,7 +4,7 @@ import axios from "axios";
 const Statistics = () => {
   const [viewcount, setviewcount] = useState(0);
   const [subscribercount, setsubscribercount] = useState(0);
-  console.log(viewcount);
+ 
   var loadonce = false; 
   let text1 = document.getElementById("subcount");
   let text2 = document.getElementById("viewcount");

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Whyus from "../components/Whyus";
 import YTvideos from "../components/YTvideos";
 import Statistics from "../components/Statistics";
@@ -11,6 +11,37 @@ import Nav from '../components/Nav';
 
 
 const HomePage = () => {
+
+  useEffect(() => {
+    intoview()
+  },[]);
+
+  function intoview() {
+    const section = document.getElementsByTagName("section");
+  
+
+  let i = 1
+
+    document.addEventListener("scroll", function () {
+      section[i].style.animation = "fade"
+      section[i].style.animationDuration = "3s"
+     
+      var clientHeight = document.documentElement.clientHeight;
+       
+        
+      var sectionY = section[i].getBoundingClientRect().y; 
+        
+      var statsSectionHeight = section[i].getBoundingClientRect().height; 
+     
+    
+      if (clientHeight > sectionY + (statsSectionHeight * 1.)) {
+        i++
+       console.log("oh no bro")
+       
+     }});
+  }
+
+
     return (
         <>
           <Nav />
