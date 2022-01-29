@@ -107,7 +107,7 @@ const Videosection = () => {
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="superscript" />
+              <FontAwesomeIcon icon="flask" />
             </span>
             Chemistry
           </div>
@@ -116,7 +116,7 @@ const Videosection = () => {
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="atom" />
+              <FontAwesomeIcon icon="superscript" />
             </span>
             Math
           </div>
@@ -125,9 +125,9 @@ const Videosection = () => {
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="atom" />
+              <FontAwesomeIcon icon="microscope" />
             </span>
-            Science Extension
+            Science Ext
           </div>
         </ul>
 

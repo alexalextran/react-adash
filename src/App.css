@@ -1123,9 +1123,9 @@ Videosection
 
 .videosection__topic {
   margin: 10px 20px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
-  
+  justify-content: center;
   cursor: pointer;
   transition: all 500ms;
   text-align: center;
