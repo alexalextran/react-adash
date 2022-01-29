@@ -120,6 +120,15 @@ const Videosection = () => {
             </span>
             Math
           </div>
+          <div
+            onClick={() => getId("Science Extension")}
+            className="videosection__topic gold clickable"
+          >
+            <span className="carousel__button ">
+              <FontAwesomeIcon icon="atom" />
+            </span>
+            Science Extension
+          </div>
         </ul>
 
         <form

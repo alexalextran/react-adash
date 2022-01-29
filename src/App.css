@@ -1030,6 +1030,7 @@ FOOTER
 footer {
   height: 20vh;
   max-height: 250px;
+  width: 100%;
   background-color: rgb(24, 24, 24);
   color: white;
   text-align: center;
@@ -1121,15 +1122,16 @@ Videosection
 }
 
 .videosection__topic {
-  margin: 0px 80px;
+  margin: 10px 20px;
   font-size: 24px;
   font-weight: 500;
+  
   cursor: pointer;
   transition: all 500ms;
   text-align: center;
   border-radius: 25px;
   background-color: rgb(199, 98, 109);
-  padding: 10px;
+
   width: 150px;
   display: flex;
   flex-direction: column;
