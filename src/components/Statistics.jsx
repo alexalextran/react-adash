@@ -79,16 +79,16 @@ useEffect(() => {
      
          
             
-              <div class="stat">
+              <div className="stat">
                <p id="subcount">0</p>
-                <p class="statistics__text">
+                <p className="statistics__text">
                 Subscribers
                 </p>
                
               </div>
-              <div class="stat">
+              <div className="stat">
               <p id="viewcount">0</p>
-                <p class="statistics__text">
+                <p className="statistics__text">
                 Total views
                 </p>
                 
