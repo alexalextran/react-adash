@@ -40,7 +40,7 @@ const Whyus = () => {
         </div>
         
           <div className="whyus__card--text">
-            <h2>Weekly Videos!</h2>
+            <h2 className="whyus__card--title">Weekly Videos!</h2>
             <p>
               We produce <span className="gold">weekly</span> content so feel free to request a video on a
               topic you'd like, we'll get to it!
@@ -60,7 +60,7 @@ const Whyus = () => {
           </span>
         </div>
           <div className="whyus__card--text">
-            <h2>Various Content</h2>
+            <h2 className="whyus__card--title">Various Content</h2>
             <p>
               We create content not just on one subject, but a <span className="gold">whole range</span>  of topics from different subjects such as chemistry, math and physics.
             </p>
@@ -77,7 +77,7 @@ const Whyus = () => {
         
         </span>
           <div className="whyus__card--text">
-            <h2>Most Importantly Its <span className="gold">free</span> !</h2>
+            <h2 className="whyus__card--title">Most Importantly Its <span className="gold">free</span> !</h2>
             <p>
               We don't charge a single cent so that<span className="gold">anyone</span>  can watch these videos, and that's the best part!
             </p>

@@ -21,24 +21,29 @@ const HomePage = () => {
   
 
   let i = 1
-
+    
     document.addEventListener("scroll", function () {
-     
+      
+    
      
       var clientHeight = document.documentElement.clientHeight;
        
         
       var sectionY = section[i].getBoundingClientRect().y; 
-        
+      
       var statsSectionHeight = section[i].getBoundingClientRect().height; 
      
     
       if (clientHeight > sectionY + (statsSectionHeight * 0.1)) { 
         section[i].style.animation = "fade"
       section[i].style.animationDuration = "1.5s"
-      section[i].style.visibility = "visible"
+      section[i].style.visibility = "visible" 
+      if(i==7){
+       
+      return
+     }
         i++
-       console.log("oh no bro")
+     
        
      }});
   }

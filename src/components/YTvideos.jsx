@@ -100,7 +100,9 @@ const Ytvideos = () => {
           <span className="carousel__button clickable">
             <FontAwesomeIcon icon="atom" />
           </span>
-        </div>
+           <p>(Click the icons to swtich between videos)</p>
+        </div> 
+      
       </div>
     </section>
   );

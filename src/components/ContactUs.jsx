@@ -71,7 +71,7 @@ const Contactus = () => {
                 <p className='card__para'> 
                     Wanna send us some donations?, all our content is free, so donations go a long way
                 </p>
-                <p>
+                <p style={{color: "rgb(95,14,14)"}}>
                     Any amount is appreciated!
                 </p>
             </div>
@@ -88,7 +88,7 @@ const Contactus = () => {
                     Feel free to contact us if you have any questions or inquiries
                 </p>
                 <p style={{color: "rgb(95,14,14)"}}>
-                    Any amount is appreciated!
+                   We will try and get back to you whenever we can!
                 </p>
             </div>
         </div>

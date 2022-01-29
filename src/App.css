@@ -269,7 +269,12 @@ HOME
   align-items: center;
   text-align: center;
   height: 100vh;
-  background-color: #3d0000;
+  background-image: linear-gradient(180deg , #3D0000 
+  , #3D0000 
+  ,  #5F0E0E 
+);
+  
+
   flex-direction: column;
   min-height: 850px;
   max-height: 1000px;
@@ -375,7 +380,10 @@ HOME
 
 #Aboutus {
   height: fit-content;
-  background-color: #5f0e0e;
+  background-image: linear-gradient(180deg , #5F0E0E 
+  , #5F0E0E 
+  ,  #3D0000 
+);
   text-align: center;
   position: relative;
   max-height: 1000px;
@@ -385,6 +393,15 @@ HOME
   color: white;
   padding-top: 80px;
   font-size: 40px;
+}
+
+.aboutus__title{
+  color: rgb(255, 226, 9);
+  font-weight: 600;
+}
+
+.aboutus__title--sub{
+  color: white
 }
 
 .cardicon {
@@ -433,7 +450,7 @@ HOME
 
 .card__summary {
   margin-top: 20px;
-  color: rgb(95, 14, 14);
+  color: transparent;
   transition: all 800ms;
   padding: 0px 24px;
   font-size: 12px;
@@ -471,6 +488,7 @@ HOME
 }
 
 .YTvideos__header--title {
+  font-weight: 600;
 }
 
 .carousel {
@@ -480,7 +498,10 @@ HOME
 
 .carousel__item--wrapper {
   height: 100%;
-  background-color: rgb(61, 0, 0);
+  background-image: linear-gradient(180deg , #3D0000 
+  , #3D0000 
+  ,  #5F0E0E 
+);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,15 +524,18 @@ HOME
   visibility: visible;
   opacity: 1;
   pointer-events: all;
+ 
 }
+
 
 .carousel__nav {
   width: 100%;
-  padding: 20px 0;
+  padding-top: 20px;
   position: absolute;
   bottom: 30px;
   left: 0;
   text-align: center;
+  color: white;
 }
 
 .carousel__button {
@@ -525,7 +549,21 @@ HOME
 }
 
 .carousel__button--selected {
-  color: rgb(255, 226, 9);
+  color: rgb(255, 226, 9); 
+ 
+  animation: pulsate 700ms ease-in  infinite alternate-reverse;
+  animation-fill-mode: 1s;
+}
+@keyframes pulsate {
+  0%{
+   transform: scale(1);
+  }
+ 
+
+  100%{
+    transform: scale(1.3);
+  }
+  
 }
 
 /*
@@ -567,6 +605,8 @@ HOME
   border-left: 5px solid rgb(255, 226, 9);
   margin-bottom: 20px;
   padding-left: 20px;
+  color: rgb(255, 226, 9);
+   font-weight: 600;
 }
 
 .whyussvg {
@@ -587,6 +627,8 @@ HOME
   padding-bottom: 40px;
   font-size: 14px;
 }
+
+
 
 .whyus__vc--icon {
   font-size: 100px;
@@ -699,17 +741,26 @@ HOME
 }
 
 .statistics__text {
-  font-size: 46px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 #viewcount,
 #subcount {
   color: rgb(255, 226, 9);
-  font-size: 36px;
+  font-size: 56px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 2px solid rgb(199,98,108);
 }
+
+.stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 /*
 
@@ -733,7 +784,7 @@ HOME
 .testimonial__title {
   padding-top: 20px;
   font-size: 56px;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(255, 226, 9);
 }
 
@@ -814,7 +865,7 @@ HOME
   margin-bottom: 60px;
   color: white;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contact__header--image {
@@ -888,6 +939,7 @@ HOME
 .card__title {
   font-size: 24px;
   border-bottom: 2px solid rgb(255, 226, 9);
+
 }
 
 .card__para {

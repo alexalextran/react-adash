@@ -6,7 +6,7 @@ const Aboutus = () => {
     <section id="Aboutus">
       <div className="aboutus__text">
           <h2 className="aboutus__title">About us?</h2>
-          <p>Everything that you need to know about <span className="red">A- Academy</span> wrapped up neatly</p>
+          <p className="aboutus__title--sub">Everything that you need to know about <span className="red">A- Academy</span> wrapped up neatly</p>
       </div>
 
       <div className="aboutus__cards flex-row">
