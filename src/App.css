@@ -663,6 +663,7 @@ HOME
 .whyus__vc {
   display: flex;
   width: 120px;
+
   overflow: hidden;
   margin: auto;
   align-items: center;
@@ -823,7 +824,7 @@ HOME
 
 .testimonial__details {
   position: absolute;
-  bottom: 40px;
+  bottom: -40px;
 }
 
 .testimonial__wrapper {
@@ -842,6 +843,7 @@ HOME
   color: black;
   align-items: center;
   font-weight: 500;
+  position: relative;
 }
 
 .image__wrapper {
@@ -1370,6 +1372,19 @@ box-shadow:  20px 20px 60px #bebebe,
     font-size: 18px;
   }
 
+  .homesvg{
+    transform: scale(4);
+    margin-top: 80px;
+  }
+
+
+  .home__header{
+    font-size: 60px;
+  }
+  .home__subheader{
+    font-size: 20px;
+  }
+
   .nav__links {
     display: flex;
     justify-content: center;
@@ -1377,7 +1392,7 @@ box-shadow:  20px 20px 60px #bebebe,
   }
 
   .home__paragraph {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .aboutus__text {
@@ -1395,6 +1410,9 @@ box-shadow:  20px 20px 60px #bebebe,
   iframe {
     width: 900px;
     height: 500px;
+  }
+  .carousel__nav{
+    bottom: 30px;
   }
   #YTvideos {
     max-height: 800px;
@@ -1426,6 +1444,7 @@ box-shadow:  20px 20px 60px #bebebe,
 
   .whyus__card--para {
     line-height: 2;
+    font-size: 12px;
   }
 
   .testimonial__cards {
@@ -1510,11 +1529,11 @@ box-shadow:  20px 20px 60px #bebebe,
 
 @media (max-width: 1024px) {
   nav {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .link {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0px;
     padding: 0px 30px;
   }
@@ -1588,6 +1607,213 @@ box-shadow:  20px 20px 60px #bebebe,
   .testimonial__cards {
     font-size: 12px;
     padding-top: 14px;
+  }
+  footer {
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 920px) {
+  nav {
+    font-size: 8px;
+  }
+
+  .link {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 14px;
+  }
+
+  .nav__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+  iframe {
+    width: 700px;
+    height: 400px;
+  }
+
+  .home__paragraph {
+    font-size: 16px;
+  }
+
+  .aboutus__text {
+    font-size: 20px;
+  }
+
+  .cardicon {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+  }
+
+  .card__summary {
+    font-size: 12px;
+  }
+
+  #YTvideos {
+    max-height: 700px;
+    min-height: 700px;
+  }
+
+  .whyus__title {
+    font-size: 20px;
+  }
+
+  .whyussvg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .whyus__card--text {
+    font-size: 12px;
+  }
+
+  .line {
+    left: 32%;
+  }
+
+  .testimonial__title {
+    font-size: 40px;
+  }
+  .testimonial__subtitle {
+    font-size: 20px;
+  }
+
+  .whyus__card--para {
+    line-height: 2;
+    font-size: 11px;
+  }
+
+  .testimonial__cards {
+    font-size: 12px;
+    padding-top: 14px;
+  }
+  footer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    font-size: 8px;
+  }
+
+  .link {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 8px;
+  }
+
+  .nav__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+  iframe {
+    width: 700px;
+    height: 400px;
+  }
+  .home__header{
+    font-size: 40px;
+  }
+  .home__subheader{
+    font-size: 20px;
+  }
+  .home__paragraph{
+    font-size: 12px;
+  }
+
+  .aboutus__card--wrapper{
+   width: 30%;
+  }
+
+  .aboutus__text {
+    font-size: 20px;
+  }
+
+  .cardicon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .card__summary {
+  margin: 0px;
+    font-size: 12px;
+  }
+
+  #YTvideos {
+    max-height: 700px;
+    min-height: 700px;
+  }
+
+  #Whyus{
+    padding: 40px 20px;
+  }
+
+  .whyus__title {
+    font-size: 20px;
+  }
+
+  .whyussvg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .whyus__card--text {
+    font-size: 12px;
+  }
+
+  .whyus__icon{
+    font-size: 70px;
+  }
+
+  .whyus__card{
+    margin-bottom: 50px;
+  }
+
+  .line {
+    left: 32%;
+  }
+
+
+  .testimonial__title {
+    font-size: 40px;
+  }
+  .testimonial__subtitle {
+    font-size: 20px;
+  }
+
+  .whyus__card--para {
+    line-height: 2;
+    font-size: 11px;
+  }
+
+  .testimonial__cards {
+    font-size: 12px;
+    padding-top: 14px;
+    width: 30%;
+  }
+
+  .send__us, .support__us{
+    width: 330px;
+    height: 200px;
+   
+  }
+
+  .contact__form{
+    padding: 30px 15px;
+   min-width: 700px;
+   max-height: 500px;
   }
   footer {
     height: 200px;

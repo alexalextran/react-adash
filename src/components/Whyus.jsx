@@ -37,7 +37,7 @@ const Whyus = () => {
       <div className="Whyus__Right">
         <div className="whyus__card">
         <div className="calendar__icon--wrapper">
-            <FontAwesomeIcon icon="calendar" className="calendar__icon"/>
+            <FontAwesomeIcon icon="calendar" className="whyus__icon calendar__icon"/>
         </div>
         
           <div className="whyus__card--text">
@@ -50,13 +50,13 @@ const Whyus = () => {
         </div>
         <div className="whyus__card">
         <div className="whyus__vc">
-          <span className="whyus__vc--icon">
+          <span className="whyus__icon  whyus__vc--icon">
             <FontAwesomeIcon icon="flask" />
           </span>
-          <span className="whyus__vc--icon">
+          <span className="whyus__icon whyus__vc--icon">
             <FontAwesomeIcon icon="superscript" />
           </span>
-          <span className="whyus__vc--icon">
+          <span className="whyus__icon  whyus__vc--icon">
             <FontAwesomeIcon icon="atom" />
           </span>
         </div>
@@ -70,10 +70,10 @@ const Whyus = () => {
         <div className="whyus__card">
         <span className="whyus__free--icon calendar__icon--wrapper">
         <div >
-        <FontAwesomeIcon icon="ban" className="line absolute" />
+        <FontAwesomeIcon icon="ban" className="whyus__icon  line absolute" />
         </div>
         <div className="calendar__icon--wrapper">
-          <FontAwesomeIcon icon="comment-dollar" className="dollar__icon"/>
+          <FontAwesomeIcon icon="comment-dollar" className="whyus__icon  dollar__icon"/>
         </div>
         
         </span>
