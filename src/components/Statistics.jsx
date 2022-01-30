@@ -35,7 +35,7 @@ useEffect(() => {
       }
       //calculate the value to be used in calculating the number to be displayed
       const progress = Math.min((currentTime - startTime) / duration, 1);
-
+      
       //calculate what to be displayed using the value gotten above
       obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
 
