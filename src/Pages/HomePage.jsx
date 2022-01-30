@@ -19,9 +19,13 @@ const HomePage = () => {
     let i = 1;
     document.addEventListener("scroll", scrollonfade);
 
-    function scrollonfade() {
+    function scrollonfade() { 
+      try{
       var clientHeight = document.documentElement.clientHeight;
-      var sectionY = section[i].getBoundingClientRect().y;
+      var sectionY = section[i].getBoundingClientRect().y;  
+    }catch(error){
+        document.removeEventListener("scroll", scrollonfade)
+      }
       var statsSectionHeight = section[i].getBoundingClientRect().height;
 
       if (clientHeight > sectionY + statsSectionHeight * 0.1) {

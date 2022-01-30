@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom'
 
 
 const Nav = () => {
-  window.onscroll = () => {
-    stickynavbar();
-  };
+  document.addEventListener("scroll", stickynavbar);
 
   function stickynavbar() {
+ 
     var navbar = document.getElementById("navbar");
+   
+
+   if(navbar == undefined){
+    document.removeEventListener("scroll", stickynavbar);
+    return
+   }
     var sticky = navbar.offsetTop;
 
     if (window.pageYOffset >= sticky) {
@@ -18,6 +23,9 @@ const Nav = () => {
       navbar.classList.remove("sticky");
     }
   }
+
+
+
 
   return (
     <nav id="navbar">
