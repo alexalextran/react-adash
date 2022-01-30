@@ -4,6 +4,7 @@ import Aboutuscards from "./ui/AboutUsCards";
 const Aboutus = () => {
   return (
     <section id="Aboutus">
+    <p id="Aboutus__anchor">aboutus__anchortag</p>
       <div className="aboutus__text">
           <h2 className="aboutus__title">About us?</h2>
           <p className="aboutus__title--sub">Everything that you need to know about <span className="red">A- Academy</span> wrapped up neatly</p>

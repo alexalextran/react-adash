@@ -9,10 +9,11 @@
   scroll-behavior: smooth;
   line-height: 1.6;
   word-spacing: 1.2px;
+  
 }
 
 html {
-  background-color: #5f0e0e;
+  background-color: rgb(246,246,246);
   width: 100%;
 }
 
@@ -46,13 +47,14 @@ li {
 }
 
 .red {
-  color: rgb(235, 10, 8);
+  color: red;
 }
 
-.gold {
-  color: rgb(255, 226, 9);
-  font-weight: bold;
+.gold{
+  color: red;
 }
+
+
 
 .clickable {
   cursor: pointer;
@@ -83,7 +85,7 @@ li {
 
 input:hover,
 textarea:hover {
-  border-color: rgb(255, 226, 9);
+  border-color: red;
 }
 
 input:active,
@@ -124,15 +126,16 @@ NAVIGATION
 
 .link {
   margin-right: 64px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 500;
   position: relative;
   cursor: pointer;
+  z-index: 100;
 }
 
 .link.gold {
-  color: rgb(255, 226, 9);
+  color: red;
 }
 
 .link:after {
@@ -142,7 +145,7 @@ NAVIGATION
   height: 3px;
   width: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
   transition: all 300ms ease;
 }
 
@@ -154,11 +157,11 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: rgb(24, 24, 24);
-  padding: 40px 0;
-  color: white;
+  background-color: rgb(51,51,51);
+  color: rgb(255, 255, 255);
   z-index: 100;
-  height: 120px;
+  height: 90px;
+  align-items: center;
 }
 
 .sticky {
@@ -168,7 +171,7 @@ nav {
 }
 
 .sticky + #Home {
-  margin-top: 120px;
+  margin-top: 90px;
 }
 
 /*
@@ -197,7 +200,7 @@ HOME
 .homeicon3 {
   top: 15vh;
   left: 90vw;
-  color: white;
+  color: black;
 }
 .homeicon4 {
   top: 50vh;
@@ -222,7 +225,7 @@ HOME
 .homeicon8 {
   top: 50vh;
   left: 70vw;
-  color: white;
+  color: black;
 }
 
 .homeicon9 {
@@ -239,7 +242,7 @@ HOME
 .homeicon11 {
   top: 50vh;
   left: 15vw;
-  color: white;
+  color: black;
 }
 .homeicon12 {
   top: 80vh;
@@ -260,7 +263,16 @@ HOME
 .homeicon15 {
   top: 80vh;
   left: 80vw;
-  color: white;
+  color: black;
+}
+
+#Home__anchor{
+  visibility: hidden;
+  color: transparent;
+  margin: auto;
+   position: absolute;
+   top: -90px;
+  
 }
 
 #Home {
@@ -269,18 +281,14 @@ HOME
   align-items: center;
   text-align: center;
   height: 100vh;
-  background-image: linear-gradient(180deg , #3D0000 
-  , #3D0000 
-  ,  #5F0E0E 
-);
-  
-
+  background: color rgb(246,246,246);
   flex-direction: column;
   min-height: 850px;
   max-height: 1000px;
   width: 100%;
   animation: fade__simple 1s ease-in;
   visibility: visible;
+ 
 }
 
 .homesvg {
@@ -293,11 +301,11 @@ HOME
 .home__header {
   font-size: 82px;
   font-weight: 600;
-  color: rgb(255, 226, 9);
+  color: red;
   text-align: start;
 }
 .home__subheader {
-  color: rgb(199, 98, 109);
+  color: rgb(185,5,4);
   text-align: start;
   font-weight: 500;
   font-size: 28px;
@@ -308,18 +316,19 @@ HOME
   margin-top: 36px;
   text-align: start;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .home__text--wrapper {
   margin-top: 130px;
   width: 50%;
+  
 }
 
 .cssbuttons-io-button {
   margin-top: 24px;
-  background: rgb(199, 98, 109);
-  color: white;
+  background: rgb(185,5,4);
+  color: black;
   font-family: inherit;
   padding: 0.35em;
   padding-left: 1.2em;
@@ -330,7 +339,7 @@ HOME
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
-  box-shadow: inset 0 0 1.6em -0.6em rgb(199, 98, 109);
+  box-shadow: inset 0 0 1.6em -0.6em rgb(185,5,4);
   overflow: hidden;
   position: relative;
   height: 2.8em;
@@ -347,7 +356,7 @@ HOME
   height: 2.2em;
   width: 2.2em;
   border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(199, 98, 109);
+  box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(185,5,4);
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -360,7 +369,7 @@ HOME
 .cssbuttons-io-button .icon svg {
   width: 1.1em;
   transition: transform 0.3s;
-  color: rgb(199, 98, 109);
+  color: rgb(185,5,4);
 }
 
 .cssbuttons-io-button:hover .icon svg {
@@ -378,35 +387,40 @@ HOME
 
  */
 
+ #Aboutus__anchor{
+   visibility: hidden;
+   color: transparent;
+   margin-bottom: 90px;
+  margin: auto;
+   position: absolute;
+ }
+
 #Aboutus {
   height: fit-content;
-  background-image: linear-gradient(180deg , #5F0E0E 
-  , #5F0E0E 
-  ,  #3D0000 
-);
+  background: color rgb(246,246,246);
   text-align: center;
   position: relative;
   max-height: 1000px;
 }
 
 .aboutus__text {
-  color: white;
+  color: black;
   padding-top: 80px;
   font-size: 40px;
 }
 
 .aboutus__title{
-  color: rgb(255, 226, 9);
+  color: red;
   font-weight: 600;
 }
 
 .aboutus__title--sub{
-  color: white
+  color: black
 }
 
 .cardicon {
   font-size: 80px;
-  background-color: rgb(168, 91, 109);
+  background-color: rgb(51,51,51);
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -427,7 +441,7 @@ HOME
   margin-top: 60px;
   padding: 40px 8px;
   height: 500px;
-  color: white;
+  color: black;
   border: none;
   transition: all 600ms;
   margin-bottom: 40px;
@@ -436,12 +450,12 @@ HOME
 }
 
 .aboutus__card--wrapper:hover {
-  background-color: #3d0000;
+  background-color: rgb(232,232,232) ;
   box-shadow: 5px 5px 30px #111111, -5px -5px 30px #111111;
 }
 
 .aboutus__card--wrapper:hover > .card__summary {
-  color: white;
+  color: black;
 }
 
 .aboutus__cards {
@@ -473,22 +487,24 @@ HOME
 
 #YTvideos {
   max-height: 1100px;
-  height: 900px;
+  height: 800px;
   min-height: 870px;
 }
 
 .YTvideos__header--text {
-  background-color: rgb(61, 0, 0);
-  color: white;
+
+  color: black;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 30px;
+  top: 20px;
   text-align: center;
 }
 
 .YTvideos__header--title {
   font-weight: 600;
+  color: rgb(255,0,0);
+  font-size: 40px;
 }
 
 .carousel {
@@ -498,10 +514,7 @@ HOME
 
 .carousel__item--wrapper {
   height: 100%;
-  background-image: linear-gradient(180deg , #3D0000 
-  , #3D0000 
-  ,  #5F0E0E 
-);
+  background: color rgb(246,246,246);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +522,6 @@ HOME
 
 .carousel__item {
   opacity: 0;
-  padding: 1em;
   visibility: none;
   position: absolute;
   transform: translateY(-50px);
@@ -530,12 +542,11 @@ HOME
 
 .carousel__nav {
   width: 100%;
-  padding-top: 20px;
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: 0;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .carousel__button {
@@ -545,11 +556,11 @@ HOME
   margin: 0 20px;
   cursor: pointer;
   transition: all 300ms;
-  color: white;
+  color: black;
 }
 
 .carousel__button--selected {
-  color: rgb(255, 226, 9); 
+  color: red; 
  
   animation: pulsate 700ms ease-in  infinite alternate-reverse;
   animation-fill-mode: 1s;
@@ -571,18 +582,27 @@ HOME
  WHY US
 
  */
+#Whyus__anchor{
+
+  visibility: hidden;
+  color: transparent;
+  margin: auto;
+   position: absolute;
+   top: -90px;
+}
 
 #Whyus {
-  background-color: rgb(95, 14, 14);
+  background-color: rgb(246,246,246);
   height: 70vh;
   min-height: 700px;
   max-height: 750px;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 40px 90px;
+  position: relative;
 }
 
 .Whyus__left {
@@ -602,10 +622,10 @@ HOME
 
 .whyus__title {
   margin-top: 30px;
-  border-left: 5px solid rgb(255, 226, 9);
+  border-left: 5px solid red;
   margin-bottom: 20px;
   padding-left: 20px;
-  color: rgb(255, 226, 9);
+  color: red;
    font-weight: 600;
 }
 
@@ -619,13 +639,14 @@ HOME
   flex-direction: row-reverse;
   margin-bottom: 90px;
   justify-content: space-around;
-  border-bottom: 3px solid rgb(199, 97, 108);
+  border-bottom: 3px solid rgb(184,4,3);
 }
 
 .whyus__card--text {
   width: 60%;
   padding-bottom: 40px;
   font-size: 14px;
+  font-weight: 500;
 }
 
 
@@ -636,6 +657,7 @@ HOME
   margin-top: 0px;
   animation: scroll 4s ease infinite;
   margin-left: 10px;
+  color: rgb(51,51,51)
 }
 
 .whyus__vc {
@@ -653,6 +675,7 @@ HOME
 
 .dollar__icon {
   font-size: 100px;
+  color: rgb(51,51,51);
 }
 
 .line {
@@ -706,6 +729,7 @@ HOME
   animation: calendar 1s ease 0s infinite alternate-reverse none;
   font-size: 100px;
   width: 40%;
+  color: rgb(51,51,51);
 }
 
 @keyframes calendar {
@@ -724,16 +748,11 @@ HOME
 
 #Statistics {
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(61, 0, 0, 1) 0%,
-    rgba(61, 0, 0, 1) 20%,
-    rgb(95, 14, 14) 80%,
-    rgb(95, 14, 14) 100%
-  );
+  background-image: linear-gradient(90deg , #F18080 
+        ,  #990100);
   max-height: 300px;
   min-height: 200px;
-  color: white;
+  color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -747,11 +766,11 @@ HOME
 
 #viewcount,
 #subcount {
-  color: rgb(255, 226, 9);
+  color: rgb(255, 255, 255);
   font-size: 56px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 2px solid rgb(199,98,108);
+  border-bottom: 2px solid rgb(255, 0, 0);
 }
 
 .stat{
@@ -768,13 +787,21 @@ HOME
 
  */
 
+ #Testimonials__anchor{
+
+  visibility: hidden;
+ color: transparent; margin: auto;
+   position: absolute;
+   top: -90px;
+}
+
 #Testimonials {
   text-align: center;
   height: 90vh;
   display: flex;
   flex-direction: column;
 
-  background-color: rgb(61, 0, 0);
+  background-color: rgb(246,246,246);
   align-items: center;
   min-height: 750px;
   max-height: 1100px;
@@ -785,12 +812,12 @@ HOME
   padding-top: 20px;
   font-size: 56px;
   font-weight: 600;
-  color: rgb(255, 226, 9);
+  color: red;
 }
 
 .testimonial__subtitle {
   font-size: 26px;
-  color: rgb(199, 98, 109);
+  color: rgb(185,5,4);
   font-weight: 400;
 }
 
@@ -812,8 +839,9 @@ HOME
   width: 25%;
   text-align: center;
   padding: 60px 0px;
-  color: white;
+  color: black;
   align-items: center;
+  font-weight: 500;
 }
 
 .image__wrapper {
@@ -830,7 +858,7 @@ HOME
 }
 
 .testimonial__name {
-  color: rgb(199, 98, 109);
+  color: rgb(185,5,4);
   padding: 20px 0px;
 }
 
@@ -851,7 +879,7 @@ HOME
   height: 70vh;
   min-height: 630px;
   max-height: 800px;
-  background-color: rgb(95, 14, 14);
+  background-color: rgb(246,246,246);
   position: relative;
 }
 
@@ -863,7 +891,7 @@ HOME
 
 .contact__header--title {
   margin-bottom: 60px;
-  color: white;
+  color: black;
   font-size: 40px;
   font-weight: 600;
 }
@@ -872,10 +900,10 @@ HOME
   width: 100%;
   height: 300px;
   background-color: aqua;
-  background-image: linear-gradient(
+  background: linear-gradient(
       to bottom,
-      rgba(245, 246, 252, 0.52),
-      rgb(95, 14, 14)
+      rgba(185,5,4, 0.52),
+      rgb(185,5,4)
     ),
     url("/src/assets/contact.jpg");
   background-size: 2000px 900px;
@@ -892,13 +920,13 @@ HOME
   margin: auto;
 }
 .send__us {
-  background-color: rgb(95, 14, 14);
+  background-color: rgb(246,246,246);
   position: absolute;
   top: 200px;
   width: 400px;
   height: 400px;
   padding: 40px 70px;
-  color: White;
+  color: black;
   text-align: center;
   right: 51%;
   transition: all 500ms;
@@ -906,20 +934,21 @@ HOME
 }
 
 .send__us:hover {
-  color: rgb(95, 14, 14);
-  background-color: white;
+  color: white;
+  background-color: rgb(153,1,0);
   transform: scale(1.04);
+  
 }
 
 .support__us {
-  background-color: rgb(95, 14, 14);
+  background-color: rgb(246,246,246);
   position: absolute;
   top: 200px;
   left: 51%;
   width: 400px;
   height: 400px;
   padding: 40px 70px;
-  color: White;
+  color: black;
   text-align: center;
   border-radius: 5%;
   transition: all 500ms;
@@ -931,15 +960,14 @@ HOME
 }
 
 .support__us:hover {
-  color: rgb(95, 14, 14);
-  background-color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(153,1,0);
   transform: scale(1.04);
 }
 
 .card__title {
   font-size: 24px;
-  border-bottom: 2px solid rgb(255, 226, 9);
-
+  border-bottom: 2px solid red;
 }
 
 .card__para {
@@ -981,9 +1009,9 @@ HOME
   display: flex;
   margin: auto;
   margin-top: 20px;
-  background-color: rgb(255, 226, 9);
-  border: 2px solid rgb(255, 226, 9);
-  color: white;
+  background-color: red;
+  border: 2px solid red;
+  color: black;
   font-weight: 500;
   width: fit-content;
   padding: 12px 24px;
@@ -1031,8 +1059,8 @@ footer {
   height: 20vh;
   max-height: 250px;
   width: 100%;
-  background-color: rgb(24, 24, 24);
-  color: white;
+  background-color: rgb(51,51,51);
+  color: black;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -1058,7 +1086,7 @@ Videosection
 */
 
 #videosection {
-  background-color: #5f0e0e;
+  background-color: rgb(246,246,246);
   height: fit-content;
   min-height: 100vh;
   position: relative;
@@ -1073,13 +1101,17 @@ Videosection
   padding: 30px 10px;
   justify-content: center;
   align-items: center;
-  background-color: #3d0000;
+  background-color: rgb(232,232,232);
   border-radius: 30px;
   flex-direction: column;
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff
 }
 
 .videosection__nav--info {
- color: white;
+ color: black;
  margin-bottom: 10px;
 }
 
@@ -1089,9 +1121,11 @@ Videosection
   flex-direction: row;
   width: 400px;
   height: 50px;
-  background-color: rgb(199, 98, 109);
+  background-color: rgb(185,5,4);
   border-radius: 20px;
   align-items: center;
+  
+  
 }
 
 .videosection__searchbar--input {
@@ -1102,7 +1136,9 @@ Videosection
   padding: 0px 10px;
   font-size: 14px;
   font-weight: 500;
-  background-color: white;
+  background-color: rgb(51,51,51);
+  color: white;
+  
 }
 
 .videosection__searchbar--input:focus {
@@ -1119,6 +1155,7 @@ Videosection
   cursor: pointer;
   border: none;
   background-color: transparent;
+  color: white;
 }
 
 .videosection__topic {
@@ -1130,15 +1167,15 @@ Videosection
   transition: all 500ms;
   text-align: center;
   border-radius: 25px;
-  background-color: rgb(199, 98, 109);
-
+  background-color: rgb(185,5,4);
+  color: white;
   width: 150px;
   display: flex;
   flex-direction: column;
 }
 
 .videosection__topic:hover {
-  box-shadow: 0px 35px 40px -15px #111;
+  box-shadow: 0px 15px 40px -15px #111;
   transform: translateY(-10px);
 }
 
@@ -1154,7 +1191,7 @@ Videosection
   height: 240px;
   width: 320px;
   margin: 20px 20px;
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(51,51,51);
   position: relative;
   cursor: pointer;
   animation: fade__simple ease-in 500ms  ;
@@ -1172,11 +1209,11 @@ Videosection
 }
 
 .videosection__card--desc {
-  background-color: #3b0000;
+  background-color: rgb(185,5,4);
   height: 180px;
   width: 320px;
   position: absolute;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   align-items: center;
   display: flex;
@@ -1189,8 +1226,8 @@ Videosection
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: rgb(24, 24, 24);
-  color: white;
+  background-color: rgb(51,51,51);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 500;
   height: 60px;
@@ -1238,7 +1275,7 @@ Videosection
 }
 
 .videoplayer__text {
-  color: white;
+  color: black;
   font-size: 30px;
   position: absolute;
   z-index: 100;
@@ -1254,8 +1291,8 @@ Videosection
   font-size: 24px;
   background-color: transparent;
   border: none;
-  color: white;
-  border-bottom: 2px solid white;
+  color: black;
+  border-bottom: 2px solid black;
 }
 
 
@@ -1301,7 +1338,7 @@ Videosection
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: white;
+  color: black;
 }
 
 .videosection__loading--title{
@@ -1310,7 +1347,7 @@ Videosection
 
 @keyframes loading__text{
   0%{
-    color: white;
+    color: black;
   }
   100% {
     color: rgb(255,226,9);
@@ -1392,7 +1429,7 @@ Videosection
   }
 
   .testimonial__cards {
-    font-size: 1px;
+    font-size: 14px;
     padding-top: 14px;
   }
 }

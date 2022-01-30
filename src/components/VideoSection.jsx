@@ -17,6 +17,7 @@ const Videosection = () => {
   
 
   useEffect(() => {
+    
     getPlaylistId();
   }, []);
 
@@ -98,7 +99,7 @@ const Videosection = () => {
             className="videosection__topic gold clickable "
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="atom" />
+              <FontAwesomeIcon icon="atom" style={{color: "rgb(202,234,247)"}}/>
             </span>
             Physics
           </div>
@@ -107,7 +108,7 @@ const Videosection = () => {
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="flask" />
+              <FontAwesomeIcon icon="flask" style={{color: "rgb(128,0,128)"}}/>
             </span>
             Chemistry
           </div>
@@ -116,7 +117,7 @@ const Videosection = () => {
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="superscript" />
+              <FontAwesomeIcon icon="superscript" style={{color: "rgb(255,165,0)"}}/>
             </span>
             Math
           </div>
@@ -125,7 +126,7 @@ const Videosection = () => {
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
-              <FontAwesomeIcon icon="microscope" />
+              <FontAwesomeIcon icon="microscope"  style={{color: "black"}}/>
             </span>
             Science Ext
           </div>

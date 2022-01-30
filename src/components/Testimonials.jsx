@@ -7,7 +7,7 @@ import josh from "../assets/josh.jpg"
 const Testimonials = () => {
     return (
         <section id='Testimonials'>
-
+  <p id="Testimonials__anchor">Whyus__anchortag</p>
         <h2 className='testimonial__title'>
              Testomonials
         

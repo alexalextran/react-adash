@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Whyus = () => {
   return (
     <section id="Whyus">
+     <p id="Whyus__anchor">Whyus__anchortag</p>
       <div className="Whyus__left">
         <div className="whyus__header">
           <p className="whyus__title">

@@ -57,8 +57,8 @@ const Ytvideos = () => {
 </div>
           <div className="carousel__item">
             <iframe
-              width="1050"
-              height="620"
+              width="850"
+              height="480"
               src="https://www.youtube.com/embed/roZrLIHFHw0"
               title="YouTube video player"
               frameBorder="0"
@@ -68,8 +68,8 @@ const Ytvideos = () => {
           </div>
           <div className="carousel__item">
             <iframe
-              width="1050"
-              height="620"
+              width="850"
+              height="480"
               src="https://www.youtube.com/embed/rQPw4AnT5pQ"
               title="YouTube video player"
               frameBorder="0"
@@ -79,8 +79,8 @@ const Ytvideos = () => {
           </div>
           <div className="carousel__item">
             <iframe
-              width="1050"
-              height="620"
+              width="850"
+              height="480"
               src="https://www.youtube.com/embed/CTvOAQpfWBY"
               title="YouTube video player"
               frameBorder="0"

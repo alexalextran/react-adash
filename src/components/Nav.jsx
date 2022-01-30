@@ -32,25 +32,24 @@ const Nav = () => {
       </div>
 
       <div className="nav__links flex-row">
-      
-        <a href="#Home">
+        <Link to="/videos"><p className="link gold">Videos</p></Link>
+
+        <a href="#Home__anchor">
           <Navlinks name="Home" />
         </a>
-        
-        <a href="#Aboutus">
-          {" "}
+        <a href="#Aboutus__anchor">
           <Navlinks name="About Us" />
         </a>
-        <a href="#Whyus">
+        <a href="#Whyus__anchor">
           <Navlinks name="Why us?" />
         </a>
-        <a href="#Testimonials">
+        <a href="#Testimonials__anchor">
           <Navlinks name="Testimonials" />
         </a>
         <a href="#contact">
           <Navlinks name="Contact & Support" />
         </a>
-        <Link to="/videos"><p className="link gold">Videos</p></Link>
+      
 
          
       

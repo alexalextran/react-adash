@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <section id="Home" onMouseMove={(event) => moveBackground(event.clientX, event.clientY)}>  
-   
+    <p id="Home__anchor">aboutus__anchortag</p>
     <FontAwesomeIcon icon="superscript" className="homeicon homeicon1"/>
     <FontAwesomeIcon icon="flask" className="homeicon  homeicon2"/>
     <FontAwesomeIcon icon="microscope" className="homeicon  homeicon3"/>
