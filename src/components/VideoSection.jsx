@@ -21,13 +21,16 @@ const Videosection = () => {
     getPlaylistId();
   }, []);
 
-  async function getPlaylistId() {
+ 
+    async function getPlaylistId() {
+       
     const { data } = await axios.get(
       `https://youtube.googleapis.com/youtube/v3/playlists?part=id%2C%20snippet&channelId=UC2TuAzbHxLIZwJqlofj_oXw&&key=AIzaSyCyHo6bVVilK7tOidj7XhQRiQSGOYFo2Lo`
     );
 
     setdata(data);
   }
+
 
   async function getVideos(id) {
     var { data } = await axios.get(
@@ -37,9 +40,9 @@ const Videosection = () => {
     setvideoarray(data.items);
   }
 
+        
   function getId(name) {
     setloading(true)
-
     setotherarray([])
     setvideoarray([])
     for (let i = 0; i < data.items.length; i++) {
@@ -47,7 +50,6 @@ const Videosection = () => {
         var id = data.items[i].id;
         setvideoid(id);
         getVideos(id);
-        
         setstatealt(false);
         setstate(true);
         break;
@@ -57,7 +59,6 @@ const Videosection = () => {
 
   function playervisibility() {
     var videoplayer_html = document.querySelector(".videoplayer__screen");
-    console.log(videoplayer_html);
     videoplayer_html.classList.add("notvisible");
     videoplayer_html.innerHTML = "";
   }
@@ -81,13 +82,11 @@ const Videosection = () => {
     (filtered__array = videoarray.filter( video =>
       searchvalues.includes(video.id)))
 
-
-    console.log(searchvalues)
-    console.log(filtered__array)
     setotherarray(filtered__array);
     setstate(false);
     setstatealt(true);
   }
+
 
   return (
     <section id="videosection">
@@ -95,7 +94,12 @@ const Videosection = () => {
      <p className="videosection__nav--info">Please select a category first!</p> 
         <ul className="videosection__topics flex-row">
           <div
-            onClick={() => getId("Physics")}
+            onClick={() => {try {
+                getId("Physics")
+                } catch(error){
+                alert("Uh-Oh Something Went Wrong, Please Try Again Later")
+            }}}
+
             className="videosection__topic gold clickable "
           >
             <span className="carousel__button ">
@@ -104,7 +108,12 @@ const Videosection = () => {
             Physics
           </div>
           <div
-            onClick={() => getId("Chemistry")}
+            onClick={() =>{try {
+                 getId("Chemistry") } 
+                 catch(error){
+                alert("Uh-Oh Something Went Wrong, Please Try Again Later")
+            }}}
+
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
@@ -113,7 +122,11 @@ const Videosection = () => {
             Chemistry
           </div>
           <div
-            onClick={() => getId("Mathematics")}
+            onClick={() => {try { 
+                getId("Mathematics") }
+                 catch(error){
+                alert("Uh-Oh Something Went Wrong, Please Try Again Later")
+            }}}
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
@@ -122,7 +135,12 @@ const Videosection = () => {
             Math
           </div>
           <div
-            onClick={() => getId("Science Extension")}
+            onClick={() => {try {
+                getId("Science Extension")
+            } 
+                 catch(error){
+                alert("Uh-Oh Something Went Wrong, Please Try Again Later")
+            }}}
             className="videosection__topic gold clickable"
           >
             <span className="carousel__button ">
