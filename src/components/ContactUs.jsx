@@ -1,9 +1,31 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import emailjs from '@emailjs/browser';
+import{ init } from '@emailjs/browser';
+init("user_2jIT9NA6dfZ3X4lKgbInB");
+
 
 
 
 const Contactus = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_e66mvck', 'template_d9refyl', form.current, 'user_2jIT9NA6dfZ3X4lKgbInB')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
+
+
+
+
     const[ismodalopen, setismodalopen] = useState(true)
    
     
@@ -38,21 +60,21 @@ const Contactus = () => {
             <div className='contact__form'>
                 <FontAwesomeIcon icon="times" className='form__exit' onClick={() => togglemodal()}/>
             <h2 className='form__title'>Send us a message!</h2>
-            <form className='form'>
+            <form ref={form} onSubmit={sendEmail}>
 
             <label>Name
             <br/>
-            <input type="text" required className='input'></input>
+            <input type="text" required name="user_name" className='input'></input>
             </label>
             <br/>
             <label>Email
             <br/>
-            <input type="email" required className='input'></input>
+            <input type="email" required name="user_email" className='input'></input>
             <br/>
             </label>
             <label>Subject
             <br/>
-            <textarea className='textarea'></textarea>
+            <textarea className='textarea' name="message"></textarea>
             </label>
             <button className='form__button'>Send</button>
 
