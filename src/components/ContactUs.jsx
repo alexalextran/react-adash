@@ -32,7 +32,7 @@ const Contactus = () => {
         <section id='contact'>
             <div className='contact__header--image'>
             <h3 className='contact__header--title'>Get In Touch</h3>
-            <a href="https://icons8.com/photos" alt="stockphoto" className='stockphotolink'>Photo by Icons8</a>
+           
             </div>
 
             <div className='contact__form'>

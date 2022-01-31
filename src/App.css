@@ -117,6 +117,7 @@ NAVIGATION
   right: 30px;
   font-size: 40px;
   display: none;
+  z-index: 100;
 }
 
 .menu__backdrop {
@@ -512,6 +513,7 @@ HOME
   margin-bottom: 40px;
   border-radius: 25px;
   border-radius: 50px;
+  position: relative;
 }
 
 .aboutus__card--wrapper:hover {
@@ -540,7 +542,7 @@ HOME
 .card__learnmore {
   border-bottom: red 2px solid;
   position: absolute;
-  bottom: 80px;
+  bottom: 20px;
   text-decoration: none;
 }
 
@@ -952,8 +954,10 @@ HOME
 
 .stockphotolink {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 5px;
+  bottom: 2px;
+  font-size: 8px;
+ 
 }
 
 .contact__header--title {
@@ -1128,12 +1132,13 @@ footer {
   max-height: 250px;
   width: 100%;
   background-color: rgb(51,51,51);
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .footer__text {
@@ -1599,9 +1604,9 @@ box-shadow:  20px 20px 60px #bebebe,
   }
 
   .link {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
-    padding: 0px 30px;
+    padding: 0px 15px;
   }
 
   .nav__links {
@@ -1850,6 +1855,12 @@ box-shadow:  20px 20px 60px #bebebe,
     font-size: 20px;
   }
 
+  .whyus__vc--icon{
+   margin-right: 60px;
+  }
+
+ 
+
   .whyussvg {
     width: 150px;
     height: 150px;
@@ -1857,6 +1868,12 @@ box-shadow:  20px 20px 60px #bebebe,
 
   .whyus__card--text {
     font-size: 12px;
+  } 
+  
+  .whyus__icon.line.absolute{
+    left: 32%;
+    top: 6px;
+    font-size: 50px;
   }
 
   .whyus__icon{
@@ -1997,7 +2014,7 @@ box-shadow:  20px 20px 60px #bebebe,
   .aboutus__card--wrapper{
     width: 80%;
     margin: 30px auto;
-    height: 400px;
+    height: 440px;
     font-size: 18px;
 
   }
@@ -2162,6 +2179,10 @@ box-shadow:  20px 20px 60px #bebebe,
 
   .whyus__card{
     margin-bottom: 10px;
+  }
+
+  .whyus__card--text{
+    padding-bottom: 20px;
   }
 
   .contact__form{

@@ -1,6 +1,7 @@
 import React from "react";
 import whyussvg from "../assets/whyus.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
 
 const Whyus = () => {
   return (
@@ -14,8 +15,9 @@ const Whyus = () => {
           <img src={whyussvg} className="whyussvg" />
         </div>
         <div className="whyus__subscribe">
+        <Link to="/videos" >
           <button className="cssbuttons-io-button">
-            Subscribe!
+            Check Out Our Videos!
             <div className="icon">
               <svg
                 height="24"
@@ -31,6 +33,7 @@ const Whyus = () => {
               </svg>
             </div>
           </button>
+          </Link>
         </div>
       </div>
 
@@ -70,7 +73,7 @@ const Whyus = () => {
         <div className="whyus__card">
         <span className="whyus__free--icon calendar__icon--wrapper">
         <div >
-        <FontAwesomeIcon icon="ban" className="whyus__icon  line absolute" />
+        <FontAwesomeIcon icon="ban" className="whyus__icon line absolute" />
         </div>
         <div className="calendar__icon--wrapper">
           <FontAwesomeIcon icon="comment-dollar" className="whyus__icon  dollar__icon"/>

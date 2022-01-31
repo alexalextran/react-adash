@@ -17,7 +17,7 @@ const Videosection = () => {
   
 
   useEffect(() => {
-    
+    window.scrollTo(0,0)
     getPlaylistId();
   }, []);
 
