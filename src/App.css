@@ -1024,6 +1024,7 @@ HOME
 .support__us.modal--open,
 .send__us.modal--open {
   visibility: hidden;
+  opacity: 0;
 }
 
 .support__us:hover {
@@ -1765,6 +1766,11 @@ box-shadow:  20px 20px 60px #bebebe,
 }
 
 @media (max-width: 768px) {
+
+  #Home{
+    height: fit-content;
+    min-height: fit-content;
+  }
   nav {
     font-size: 8px;
   }
@@ -1781,6 +1787,21 @@ box-shadow:  20px 20px 60px #bebebe,
     align-items: center;
   
   }
+
+  
+  .homeicon{
+    display: none;
+  }
+
+  @keyframes homeicons {
+    0%{
+      
+    }
+    100%{
+      transform: translateZ(80px);
+    }
+  }
+
 
 
   iframe {
@@ -1887,7 +1908,10 @@ box-shadow:  20px 20px 60px #bebebe,
 
 @media (max-width: 715px) {
 
-
+#home{
+  pointer-events: none;
+  
+}
   .link {
   display: none;
   }
@@ -1917,7 +1941,12 @@ box-shadow:  20px 20px 60px #bebebe,
     }
   }
 
- 
+ .home__text--wrapper{
+   margin-top: 60px;
+ }
+
+
+
 
 
   iframe {
@@ -1934,8 +1963,21 @@ box-shadow:  20px 20px 60px #bebebe,
     font-size: 12px;
   }
 
+  #Aboutus{
+    max-height: fit-content;
+  }
+
+  .aboutus__cards {
+    display: flex;
+    flex-direction: column;
+  }
+ 
   .aboutus__card--wrapper{
-   width: 30%;
+    width: 80%;
+    margin: 30px auto;
+    height: 300px;
+    font-size: 18px;
+
   }
 
   .aboutus__text {
@@ -1950,7 +1992,7 @@ box-shadow:  20px 20px 60px #bebebe,
 
   .card__summary {
   margin: 0px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #YTvideos {
@@ -1988,6 +2030,17 @@ box-shadow:  20px 20px 60px #bebebe,
   }
 
 
+  #Testimonials{
+    min-height: fit-content;
+    height: fit-content;
+    max-height: fit-content;
+  }
+
+  .testimonial__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
   .testimonial__title {
     font-size: 40px;
   }
@@ -2003,19 +2056,57 @@ box-shadow:  20px 20px 60px #bebebe,
   .testimonial__cards {
     font-size: 12px;
     padding-top: 14px;
-    width: 30%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+    
+  }
+  .card__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .card__title{
+    font-size: 18px;
+  }
+
+  .card__para{
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+
+  #contact{
+    height: fit-content;
+    max-height: fit-content;
+    min-height: fit-content;
+  }
+
+  .contact__header--image{
+    height: 200px;
   }
 
   .send__us, .support__us{
-    width: 330px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    transition: all 500ms;
+    padding: 20px 30px;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: 20px auto;
+    
    
   }
 
   .contact__form{
     padding: 30px 15px;
-   min-width: 700px;
+   min-width: 500px;
    max-height: 500px;
+    
+    bottom: -90px;
   }
   footer {
     height: 200px;
