@@ -1975,7 +1975,7 @@ box-shadow:  20px 20px 60px #bebebe,
   .aboutus__card--wrapper{
     width: 80%;
     margin: 30px auto;
-    height: 300px;
+    height: 400px;
     font-size: 18px;
 
   }
@@ -2111,4 +2111,41 @@ box-shadow:  20px 20px 60px #bebebe,
   footer {
     height: 200px;
   }
+}
+
+@media (max-width: 620px) {
+  iframe{
+    width: 400px;
+    height: 230px;
+    margin: auto;
+  }
+
+  #Whyus{
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .carousel__nav{
+    bottom: 70px;
+  }
+
+  .whyus__subscribe{
+    padding-bottom: 30px;
+  }
+
+  .Whyus__left, .Whyus__Right{
+    width: 100%;
+    height: fit-content;
+  }
+
+  .whyus__card{
+    margin-bottom: 10px;
+  }
+
+  .contact__form{
+    width: 320px;
+    min-width: 320px;
+  }
+
+  
 }
