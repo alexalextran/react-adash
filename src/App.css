@@ -1904,6 +1904,28 @@ box-shadow:  20px 20px 60px #bebebe,
   footer {
     height: 200px;
   }
+
+  #videosection__nav{
+    width: 100%;
+  }
+
+  .videosection__topics{
+    column-count: 2;
+    grid-template-columns: 150px 150px;
+    
+    grid-template-rows: 100px 100px;
+    row-gap: 20px;
+    display: grid;
+    column-gap: 10px;
+  }
+
+  .videosection__searchbar{
+    width: 350px;
+  }
+
+  .videosection__topic{
+    margin: 0px;
+  }
 }
 
 @media (max-width: 715px) {
