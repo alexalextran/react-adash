@@ -14,7 +14,7 @@ const Contactus = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_e66mvck', 'template_d9refyl', form.current, 'user_2jIT9NA6dfZ3X4lKgbInB')
+      emailjs.sendForm('service_e66mvck', 'template_qjzb3uo', form.current, 'user_2jIT9NA6dfZ3X4lKgbInB')
         .then((result) => {
             console.log(result.text);
         }, (error) => {

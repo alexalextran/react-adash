@@ -500,6 +500,8 @@ HOME
 }
 
 .aboutus__card--wrapper {
+
+  font-weight: 600;
   width: 25%;
   display: flex;
   text-align: center;
@@ -534,7 +536,7 @@ HOME
   color: transparent;
   transition: all 800ms;
   padding: 0px 24px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .card__summary:hover {
 }
