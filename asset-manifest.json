@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-adash/static/css/main.a776ad39.css",
-    "main.js": "/react-adash/static/js/main.ddeca179.js",
+    "main.css": "/react-adash/static/css/main.b22a8c30.css",
+    "main.js": "/react-adash/static/js/main.6c6795a2.js",
     "static/js/787.b4a482b4.chunk.js": "/react-adash/static/js/787.b4a482b4.chunk.js",
     "static/media/alex.jpg": "/react-adash/static/media/alex.00583f9571f4677cb776.jpg",
     "static/media/contact.jpg": "/react-adash/static/media/contact.67e3e3a3e1c07bdafb26.jpg",
@@ -12,12 +12,12 @@
     "static/media/Atom.svg.png": "/react-adash/static/media/Atom.svg.7fa172e2dfb7c6095649.png",
     "static/media/home.svg": "/react-adash/static/media/home.13e820c6b3d9ac2f767b0fb35179c5e2.svg",
     "index.html": "/react-adash/index.html",
-    "main.a776ad39.css.map": "/react-adash/static/css/main.a776ad39.css.map",
-    "main.ddeca179.js.map": "/react-adash/static/js/main.ddeca179.js.map",
+    "main.b22a8c30.css.map": "/react-adash/static/css/main.b22a8c30.css.map",
+    "main.6c6795a2.js.map": "/react-adash/static/js/main.6c6795a2.js.map",
     "787.b4a482b4.chunk.js.map": "/react-adash/static/js/787.b4a482b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a776ad39.css",
-    "static/js/main.ddeca179.js"
+    "static/css/main.b22a8c30.css",
+    "static/js/main.6c6795a2.js"
   ]
 }
