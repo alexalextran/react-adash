@@ -9,7 +9,7 @@ const Testimonials = () => {
         <section id='Testimonials'>
   <p id="Testimonials__anchor">Whyus__anchortag</p>
         <h2 className='testimonial__title'>
-             Testomonials
+            Testimonials
         
         </h2>
         <h5 className='testimonial__subtitle'>
@@ -20,9 +20,9 @@ const Testimonials = () => {
        
             <TestimonialCards
             img={alex}
-            para="Aadarsh has helped me through the tramuatizing years i spent in chemistry and math classes before the hsc. With his help i was able to acheieve an atar with 85 even tho my predicted atar before taking aadarsh's classes was 55. I can't thank aadarsh enough for saving my hsc years, and i hope he can do the same for you all you future A- Academy Students"
+            para="Aadarsh has helped me through the traumatising years I spent in chemistry and math classes before the HSC. With his help, I was able to achieve an ATAR of 85 even though my predicted ATAR before taking help from A- Academy was 55. I can't thank Aadarsh enough for saving my HSC years, and I hope he can do the same for all you future A- Academy Students"
             name="Alex"
-            title="HSC Graudate"
+            title="HSC Graduate"
             />
             <TestimonialCards 
            img={josh} 
@@ -32,7 +32,7 @@ const Testimonials = () => {
             />
             <TestimonialCards
              img={jaden} 
-            para="I've known Aardarsh as a friend for several years now. In those years, he has been nothing short of a whirling storm of productivity, whom I admire. The channel he offers in this endeavor is an excellent expression of his work ethic as it comprehensively covers subjects that students most often struggle with. I personally love how well he structures his individual lessons so that they can be easily digested in just a few viewings. Can't recommend him enough."
+            para="I've known Aadarsh as a friend for several years now. In those years, he has been nothing short of a whirling storm of productivity, whom I admire. The channel he offers in this endeavour is an excellent expression of his work ethic as it comprehensively covers subjects that students most often struggle with. I personally love how well he structures his individual lessons so that they can be easily digested in just a few viewings. Can't recommend him enough."
             name="Jaden"
             title="Uni Student"
             /> 

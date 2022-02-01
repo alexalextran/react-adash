@@ -59,7 +59,7 @@ const Contactus = () => {
 
             <div className='contact__form'>
                 <FontAwesomeIcon icon="times" className='form__exit' onClick={() => togglemodal()}/>
-            <h2 className='form__title'>Send us a message!</h2>
+            <h2 className='form__title'>Send Us A Message!</h2>
             <form ref={form} onSubmit={sendEmail}>
 
             <label>Name
@@ -91,7 +91,7 @@ const Contactus = () => {
                     Support Us
                 </h5>
                 <p className='card__para'> 
-                    Wanna send us some donations?, all our content is free, so donations go a long way
+                 Want to send us donations? All our content is free, so donations go a long way!
                 </p>
                 <p style={{color: "rgb(246,246,246)"}}>
                     Any amount is appreciated!

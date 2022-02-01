@@ -53,7 +53,7 @@ const Ytvideos = () => {
         <div className="carousel__item--wrapper">
         <div className="YTvideos__header--text">
    <h1 className="YTvideos__header--title gold">Recommended Videos</h1>
-   <p>Watch some of our top videos on maths, phyiscs and chemistry</p>
+   <p>Watch some of our top videos on Mathematics, Phyiscs and Chemistry</p>
 </div>
           <div className="carousel__item">
             <iframe
@@ -100,7 +100,7 @@ const Ytvideos = () => {
           <span className="carousel__button clickable">
             <FontAwesomeIcon icon="atom" />
           </span>
-           <p>(Click the icons to swtich between videos)</p>
+           <p>(Click the icons to switch between videos)</p>
         </div> 
       
       </div>

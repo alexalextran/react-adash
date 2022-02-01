@@ -168,8 +168,9 @@ const Videosection = () => {
 
         <Link to="/">
           <button className="homebutton clickable">
+          <FontAwesomeIcon icon="home" />
             Home
-            <FontAwesomeIcon icon="home" />
+            
           </button>
         </Link>
       </div>

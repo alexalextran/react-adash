@@ -47,7 +47,7 @@ const Whyus = () => {
             <h2 className="whyus__card--title">Weekly Videos!</h2>
             <p>
               We produce <span className="gold">weekly</span> content so feel free to request a video on a
-              topic you'd like, we'll get to it!
+              topic you'd like!
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Whyus = () => {
           <div className="whyus__card--text">
             <h2 className="whyus__card--title">Most Importantly Its <span className="gold">free</span> !</h2>
             <p>
-              We don't charge a single cent so that<span className="gold">anyone</span>  can watch these videos, and that's the best part!
+              We don't charge a single cent so that <span className="gold">anyone</span>  can watch these videos.
             </p>
           </div>
         </div>
