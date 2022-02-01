@@ -14,8 +14,8 @@ function App() {
         
         <Routes>
           
-          <Route path="/" element={<HomePage />} />
-          <Route path="/videos" element={<Videos />} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/videos" element={<Videos />} />
         </Routes>
      
         <Footer />
