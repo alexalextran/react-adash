@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {library} from '@fortawesome/fontawesome-svg-core'
+
 import { faUserFriends, faBookReader, faUserGraduate , faSuperscript, faFlask, faMicroscope, faGraduationCap, faAtom, faTimes, faCalendar, faCommentDollar, faBan, faSearch, faHome, faBars} from '@fortawesome/free-solid-svg-icons'
+
 
 library.add(faUserFriends, faBookReader, faUserGraduate, faSuperscript, faFlask, faMicroscope, faGraduationCap, faAtom, faTimes, faCalendar, faCommentDollar, faBan, faSearch, faHome, faBars)
  
