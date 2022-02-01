@@ -71,7 +71,7 @@ const Contactus = () => {
             <div className='contact__form'>
 
             <div className='contact__form--succsessful'>
-                <h1>Thank You Your Message Has Been Sent!</h1>
+                <h1>Thank You. Your Message Has Been Sent.</h1>
             </div>
                 <FontAwesomeIcon icon="times" className='form__exit' onClick={() => togglemodal()}/>
                 <div className='form__header'>

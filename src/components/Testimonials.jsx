@@ -21,7 +21,7 @@ const Testimonials = () => {
        
             <TestimonialCards
             img={alex}
-            para="Aadarsh has helped me through the traumatising years I spent in chemistry and math classes before the HSC. With his help, I was able to achieve an ATAR of 85 even though my predicted ATAR before taking help from A- Academy was 55. I can't thank Aadarsh enough for saving my HSC years, and I hope he can do the same for all you future A- Academy Students"
+            para="Aadarsh has helped me through the traumatising years I spent in chemistry and math classes before the HSC. With his help, I was able to achieve an ATAR of 85 even though my predicted ATAR before taking help from A- Academy was 55. I can't thank Aadarsh enough for saving my HSC years, and I hope he can do the same for all you future A- Academy Students."
             name="Alex"
             title="HSC Graduate"
             />
