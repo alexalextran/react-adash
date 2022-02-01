@@ -1,8 +1,9 @@
 import React from 'react';
 import TestimonialCards from './ui/TestimonialCards';
 import alex from "../assets/alex.jpg"
-import jaden from "../assets/jaden.png"
+import jaden from "../assets/jadenprofilepic.jpg"
 import josh from "../assets/josh.jpg"
+
 
 const Testimonials = () => {
     return (
