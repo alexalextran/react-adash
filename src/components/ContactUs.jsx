@@ -10,18 +10,25 @@ init("user_2jIT9NA6dfZ3X4lKgbInB");
 
 
 const Contactus = () => {
-
+    const succsessful = document.getElementsByClassName("contact__form--succsessful")
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
+        e.preventDefault();
+        
       emailjs.sendForm('service_e66mvck', 'template_qjzb3uo', form.current, 'user_2jIT9NA6dfZ3X4lKgbInB')
         .then((result) => {
             console.log(result.text);
-        }, (error) => {
+
+        }, (error) => { 
+            alert("The email service is currently down, please reach us at aadarshanuj217@gmail.com")
             console.log(error.text);
-        });
+           
+        }); 
+       
+        succsessful[0].style.opacity = "1"
+        succsessful[0].style.visibility = "visible"
+      
     };
   
 
@@ -35,6 +42,8 @@ const Contactus = () => {
          const send__Us = document.querySelector(".send__us")
          const contact__form = document.querySelector(".contact__form")
          const support__us = document.querySelector(".support__us")
+         succsessful[0].style.opacity = "0"
+         succsessful[0].style.visibility = "hidden"
          
         if (ismodalopen) {
             setismodalopen(false);
@@ -60,6 +69,10 @@ const Contactus = () => {
             </div>
 
             <div className='contact__form'>
+
+            <div className='contact__form--succsessful'>
+                <h1>Thank You Your Message Has Been Sent!</h1>
+            </div>
                 <FontAwesomeIcon icon="times" className='form__exit' onClick={() => togglemodal()}/>
                 <div className='form__header'>
                     <h2 className='form__title'>Send Us A Message!</h2>
