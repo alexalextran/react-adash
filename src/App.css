@@ -1050,6 +1050,13 @@ HOME
   font-weight: 500;
 }
 
+.profilepic__aadarsh{
+  border-radius: 50%;
+  width: 100px;
+  display: flex;
+  margin: auto;
+}
+
 .contact__form {
   position: absolute;
   width: 45%;
@@ -1064,6 +1071,14 @@ HOME
   transition: all 800ms;
   opacity: 0;
   margin-bottom: 30px;
+
+}
+
+.form__header{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .contact__form.modal--open {
@@ -1076,7 +1091,8 @@ HOME
 .form__title {
   display: flex;
   margin: auto;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .form__button {
@@ -1921,6 +1937,8 @@ box-shadow:  20px 20px 60px #bebebe,
    min-width: 700px;
    max-height: 500px;
   }
+
+
   footer {
     height: 200px;
   }

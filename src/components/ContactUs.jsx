@@ -2,7 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import emailjs from '@emailjs/browser';
 import{ init } from '@emailjs/browser';
+import aadarsh from "../assets/aadarsh.jpg";
 init("user_2jIT9NA6dfZ3X4lKgbInB");
+
 
 
 
@@ -59,7 +61,11 @@ const Contactus = () => {
 
             <div className='contact__form'>
                 <FontAwesomeIcon icon="times" className='form__exit' onClick={() => togglemodal()}/>
-            <h2 className='form__title'>Send Us A Message!</h2>
+                <div className='form__header'>
+                    <h2 className='form__title'>Send Us A Message!</h2>
+            <img src={aadarsh} className='profilepic__aadarsh'/>
+                </div>
+            
             <form ref={form} onSubmit={sendEmail}>
 
             <label>Name

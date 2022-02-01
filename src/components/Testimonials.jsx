@@ -2,7 +2,7 @@ import React from 'react';
 import TestimonialCards from './ui/TestimonialCards';
 import alex from "../assets/alex.jpg"
 import jaden from "../assets/jadenprofilepic.jpg"
-import josh from "../assets/josh.jpg"
+import angeline from "../assets/Angeline.jpeg"
 
 
 const Testimonials = () => {
@@ -26,9 +26,9 @@ const Testimonials = () => {
             title="HSC Graduate"
             />
             <TestimonialCards 
-           img={josh} 
-            para="Even before aadarsh went online he was still a massive help to students at his highschool. I still can still remember the mini tutoring lessons he gave us before an exam and thanks to aadarsh i was able to pass my investigating science exam with flying colors and get into my computer science course at Uni. I still even watch his videos from time to time whenever old content pop backs up in my uni assignments"
-            name="Joshua"
+           img={angeline} 
+            para="A- Academy, especially Aadarsh, was a massive help for me in the HSC. He helped me succeed in Extension Mathematics with flying colours. This allowed me to successfully get into my science course at university. Not only was his knowledge amazing, but also his belief in me; it really motivated me to do my best not only in my studies but everything I try in life. Best decision I have made hands down to join A- Academy!"
+            name="Angeline"
             title="Uni Student"
             />
             <TestimonialCards
