@@ -53,7 +53,7 @@ const Ytvideos = () => {
         <div className="carousel__item--wrapper">
         <div className="YTvideos__header--text">
    <h1 className="YTvideos__header--title gold">Recommended Videos</h1>
-   <p>Watch some of our top videos on Mathematics, Phyiscs and Chemistry</p>
+   <p>Watch some of our top videos on Mathematics, Physics and Chemistry</p>
 </div>
           <div className="carousel__item">
             <iframe

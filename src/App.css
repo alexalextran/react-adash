@@ -2199,8 +2199,8 @@ box-shadow:  20px 20px 60px #bebebe,
 
 @media (max-width: 620px) {
   iframe{
-    width: 400px;
-    height: 230px;
+    width:  375px;
+    height: 210px;
     margin: auto;
   }
 

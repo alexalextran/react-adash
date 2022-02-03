@@ -70,13 +70,16 @@ const Videosection = () => {
     const searchvalues = []
     var filtered__array = []
     var searchvalue = document.getElementById("video__search").value.toLowerCase().split(" ");
+    console.log(searchvalue)
     if (searchvalue == "") {
       return;
     }
     for (let i = 0; i < videoarray.length; i++) {
-      if (videoarray[i].snippet.title.toLowerCase().includes(searchvalue)) {
+      for (let k = 0; k < searchvalue.length; k++){
+      if (videoarray[i].snippet.title.toLowerCase().includes(searchvalue[k])) {
         searchvalues.push(videoarray[i].id)
       }
+    }
     }
   
     (filtered__array = videoarray.filter( video =>
