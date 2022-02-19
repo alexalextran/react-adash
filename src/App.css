@@ -1238,7 +1238,7 @@ box-shadow:  20px 20px 60px #bebebe,
   background-color: rgb(185,5,4);
   border-radius: 20px;
   align-items: center;
-  
+  display: none;
   
 }
 
